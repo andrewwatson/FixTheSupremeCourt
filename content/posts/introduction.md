@@ -5,7 +5,7 @@ draft = false
 title = 'Introduction'
 slug = 'introduction'
 description = 'Nine is Not Enough'
-tags = ['philosophy', ]
+tags = ['philosophy']
 categories = ['project', 'announcement']
 authors = [ { name = "Editor"} ]
 featured = true
