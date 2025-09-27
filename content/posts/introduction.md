@@ -1,7 +1,7 @@
 +++
 date = '2025-09-27T16:50:20-04:00'
 lastmod = '2025-09-27T16:50:20-04:00'
-draft = false
+draft = true
 title = 'Introduction'
 slug = 'introduction'
 description = 'Nine is Not Enough'
