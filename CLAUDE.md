@@ -52,3 +52,5 @@ This is a standard Hugo site with the following key directories:
 - The site is currently in initial state with empty content and layout directories
 - No theme is currently installed - layouts will need to be created manually or a theme added
 - Hugo version in use: v0.148.2+extended (supports Sass/SCSS processing and other extended features)
+- don't use my twitter handle in front matter
+- the default author for every post will just say "Editor"
