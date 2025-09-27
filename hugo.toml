@@ -1,4 +1,4 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Fix The Supreme Court'
-theme = 'ananke'
+theme = 'PaperMod'
