@@ -6,5 +6,7 @@ theme = 'PaperMod'
 [params]
 mainSections = ['posts', 'featured']
 
+summaryLength = 500
+
 [pagination]
 pagerSize = 20

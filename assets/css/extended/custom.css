@@ -171,3 +171,9 @@
 [data-theme="dark"] .sidebar {
     background: var(--entry);
 }
+
+/* Make header text much bigger */
+.logo a {
+    font-size: 48px !important;
+    font-weight: 700;
+}

@@ -9,9 +9,9 @@ weight = 10
 
 The theft of the Supreme Court didn't happen overnight. It was a carefully orchestrated heist, and Mitch McConnell was the mastermind.
 
-<!--more-->
-
 In February 2016, when Justice Antonin Scalia died, President Obama had nearly a year left in his term. Obama nominated Merrick Garland, a moderate judge who Republicans had previously praised. McConnell's response? He invented a new rule: no Supreme Court confirmations in election years. "The American people should have a voice in the selection of their next Supreme Court Justice," McConnell declared, blocking even hearings for Garland.
+
+<!--more-->
 
 Fast forward to September 2020. Justice Ruth Bader Ginsburg died just 46 days before the presidential election. Did McConnell stick to his principled "election year" rule? Of course not. Within hours of Ginsburg's death, he announced the Senate would vote on Trump's nominee. Amy Coney Barrett was confirmed just eight days before the election.
 
