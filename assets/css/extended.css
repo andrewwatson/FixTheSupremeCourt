@@ -1,0 +1,68 @@
+/* Homepage intro section */
+.homepage-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.homepage-intro h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.homepage-subtitle {
+    font-size: 1.2rem;
+    color: var(--secondary);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* Featured post styling */
+.featured-post {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: rgba(160, 140, 140, 0.02);
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+}
+
+/* Make featured posts slightly larger */
+.featured-post .entry-header h2 {
+    font-size: 1.3rem;
+}
+
+.featured-post .entry-content {
+    font-size: 1.05rem;
+}
+
+/* Add subtle animation on hover for featured posts */
+.featured-post:hover {
+    transform: translateY(-1px);
+    transition: transform 0.2s ease;
+    background: rgba(0, 0, 0, 0.04);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .homepage-intro h1 {
+        font-size: 2.2rem;
+    }
+
+    .homepage-subtitle {
+        font-size: 1.1rem;
+    }
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .featured-post {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+[data-theme="dark"] .featured-post:hover {
+    background: rgba(255, 255, 255, 0.06);
+}

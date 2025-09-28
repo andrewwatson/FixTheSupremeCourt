@@ -2,3 +2,9 @@ baseURL = 'https://fixthesupremecourt.org/'
 languageCode = 'en-us'
 title = 'Fix The Supreme Court'
 theme = 'PaperMod'
+
+[params]
+mainSections = ['posts', 'featured']
+
+[pagination]
+pagerSize = 20
