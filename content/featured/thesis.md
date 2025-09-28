@@ -10,8 +10,6 @@ weight = 1
 
 The United States Supreme Court is supposed to be above politics. It's supposed to represent the rule of law, not the rule of party. But here's a fact that should make every American's blood boil: six of the nine current justices were appointed by presidents who lost the popular vote, and three were confirmed by senators representing less than half the American population.
 
-<!--more-->
-
 This isn't your parents' Supreme Court. This is a partisan institution that has been systematically captured through decades of political maneuvering, outright hypocrisy, and constitutional hardball. The result? A Court that doesn't represent America is now making decisions that will govern America for generations.
 
 ## The Path Forward: Reform or Irrelevance
