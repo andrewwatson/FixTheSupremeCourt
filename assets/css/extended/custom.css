@@ -177,3 +177,8 @@
     font-size: 48px !important;
     font-weight: 700;
 }
+
+/* Add padding above header */
+.header {
+    padding-top: 2rem;
+}

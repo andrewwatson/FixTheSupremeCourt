@@ -5,6 +5,7 @@ theme = 'PaperMod'
 
 [params]
 mainSections = ['posts', 'featured']
+defaultTheme = 'light'
 
 summaryLength = 500
 
