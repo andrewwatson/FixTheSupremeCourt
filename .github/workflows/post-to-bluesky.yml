@@ -1,0 +1,31 @@
+name: Post to Bluesky
+
+on:
+  schedule:
+    # Run every 4 hours to check for new posts
+    - cron: '15 */4 * * *'
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  post-to-bluesky:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Post to Bluesky
+        env:
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_PASSWORD: ${{ secrets.BLUESKY_PASSWORD }}
+          SITE_URL: 'https://fixthesupremecourt.com'
+        run: |
+          python scripts/post_to_bluesky.py

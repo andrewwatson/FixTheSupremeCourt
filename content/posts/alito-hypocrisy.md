@@ -1,5 +1,5 @@
 +++
-date = '2025-12-13T01:00:00-05:00'
+date = '2025-12-11T00:00:00-05:00'
 draft = false
 title = 'Justice Alito: The Ethics Scandals, Insurrection Flags, and Breathtaking Hypocrisy'
 author = 'Editor'

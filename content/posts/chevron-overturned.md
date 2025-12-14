@@ -1,5 +1,5 @@
 +++
-date = '2025-12-12T01:00:00-05:00'
+date = '2025-12-11T12:00:00-05:00'
 draft = false
 title = 'The Court Just Gutted the Administrative State: How Loper Bright Weaponizes Judges Against Experts'
 author = 'Editor'
