@@ -1,7 +1,7 @@
 +++
 date = '2025-12-14T23:48:42-05:00'
 draft = false
-title = 'Brown University, Bruen, and the Blood on the Supreme Court's Hands'
+title = "Brown University, Bruen, and the Blood on the Supreme Court's Hands"
 author = 'Editor'
 weight = 10
 +++
