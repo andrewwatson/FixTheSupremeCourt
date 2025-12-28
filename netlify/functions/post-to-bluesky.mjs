@@ -89,8 +89,9 @@ const handler = async () => {
         // Bluesky limit is 300 graphemes (not characters)
         const maxGraphemes = 300;
 
-        // Start with a conservative excerpt length and adjust
-        let excerptMaxLength = 100;
+        // Start with a small excerpt length and work our way up
+        // Title + URL + separators typically take 100-150 graphemes
+        let excerptMaxLength = 50;
         let postText = '';
         let rt = null;
 
@@ -123,11 +124,17 @@ const handler = async () => {
           excerptMaxLength -= 20;
         }
 
-        if (rt.graphemeLength > maxGraphemes) {
-          throw new Error(`Could not fit post within ${maxGraphemes} graphemes (title: ${title.length} chars, URL: ${url.length} chars)`);
+        if (!rt || rt.graphemeLength > maxGraphemes) {
+          throw new Error(`Could not fit post within ${maxGraphemes} graphemes (title: ${title.length} chars, URL: ${url.length} chars, current: ${rt?.graphemeLength || 'unknown'})`);
         }
 
         console.log(`Final post: ${rt.graphemeLength}/${maxGraphemes} graphemes`);
+        console.log(`Post text: ${postText}`);
+
+        // Final safety check before posting
+        if (rt.graphemeLength > maxGraphemes) {
+          throw new Error(`Safety check failed: ${rt.graphemeLength} > ${maxGraphemes}`);
+        }
 
         // Post to Bluesky
         const response = await agent.post({
