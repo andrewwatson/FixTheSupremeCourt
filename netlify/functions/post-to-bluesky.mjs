@@ -6,7 +6,7 @@ import { getAllPosts, getPublishablePosts, extractExcerpt, getPostUrl } from './
 /**
  * Main handler for posting new blog posts to Bluesky
  */
-const handler = async (event) => {
+const handler = async () => {
   console.log('Starting Bluesky post check...');
 
   try {
@@ -86,31 +86,48 @@ const handler = async (event) => {
         const title = post.frontMatter.title || post.slug;
         const url = getPostUrl(post.slug, baseUrl);
 
-        // Calculate how much space is left for the excerpt
-        // Bluesky limit is 300 characters
-        // Format: Title\n\n[excerpt]\n\nURL
-        const maxLength = 300;
-        const separators = '\n\n\n\n'; // 4 characters for the two \n\n separators
-        const reservedLength = title.length + url.length + separators.length;
-        const excerptMaxLength = Math.max(0, maxLength - reservedLength - 10); // -10 for safety margin
+        // Bluesky limit is 300 graphemes (not characters)
+        const maxGraphemes = 300;
 
-        const excerpt = extractExcerpt(post.content, excerptMaxLength);
+        // Start with a conservative excerpt length and adjust
+        let excerptMaxLength = 100;
+        let postText = '';
+        let rt = null;
 
-        // Create the Bluesky post text
-        // Format: Title\n\nExcerpt\n\nURL
-        let postText = `${title}\n\n${excerpt}\n\n${url}`;
+        // Iteratively build the post to fit within grapheme limit
+        while (excerptMaxLength >= 0) {
+          const excerpt = excerptMaxLength > 0 ? extractExcerpt(post.content, excerptMaxLength) : '';
 
-        // Double-check length and truncate if needed
-        if (postText.length > maxLength) {
-          console.warn(`Post text too long (${postText.length} chars), truncating...`);
-          postText = postText.substring(0, maxLength - 3) + '...';
+          // Build post text
+          if (excerpt) {
+            postText = `${title}\n\n${excerpt}\n\n${url}`;
+          } else {
+            postText = `${title}\n\n${url}`;
+          }
+
+          // Use RichText to count graphemes properly
+          rt = new RichText({ text: postText });
+          await rt.detectFacets(agent);
+
+          // Check grapheme length
+          const graphemeLength = rt.graphemeLength;
+
+          console.log(`Attempt with excerpt length ${excerptMaxLength}: ${graphemeLength}/${maxGraphemes} graphemes`);
+
+          if (graphemeLength <= maxGraphemes) {
+            // Found a length that works!
+            break;
+          }
+
+          // Reduce excerpt length and try again
+          excerptMaxLength -= 20;
         }
 
-        console.log(`Post length: ${postText.length}/${maxLength} characters`);
+        if (rt.graphemeLength > maxGraphemes) {
+          throw new Error(`Could not fit post within ${maxGraphemes} graphemes (title: ${title.length} chars, URL: ${url.length} chars)`);
+        }
 
-        // Use RichText to properly handle facets (links, mentions, etc.)
-        const rt = new RichText({ text: postText });
-        await rt.detectFacets(agent);
+        console.log(`Final post: ${rt.graphemeLength}/${maxGraphemes} graphemes`);
 
         // Post to Bluesky
         const response = await agent.post({
