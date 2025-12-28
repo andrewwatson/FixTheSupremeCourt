@@ -35,33 +35,47 @@ const handler = async (event) => {
       consistency: 'strong',
     });
 
+    // Get the last run timestamp
+    const lastRunTimestamp = await store.get('last-run-timestamp', { type: 'text' });
+    const lastRunDate = lastRunTimestamp ? new Date(lastRunTimestamp) : null;
+
+    console.log(`Last run: ${lastRunDate ? lastRunDate.toISOString() : 'never (first run)'}`);
+
     // Get all posts and filter to publishable ones
     const allPosts = await getAllPosts();
     const publishablePosts = getPublishablePosts(allPosts);
 
     console.log(`Found ${publishablePosts.length} publishable posts`);
 
-    // Get list of already posted slugs from Netlify Blobs
-    const postedSlugsJson = await store.get('posted-slugs', { type: 'json' });
-    const postedSlugs = new Set(postedSlugsJson || []);
+    // Filter to only posts published since the last run
+    const newPosts = lastRunDate
+      ? publishablePosts.filter(post => {
+          if (!post.frontMatter.date) return false;
+          const postDate = new Date(post.frontMatter.date);
+          return postDate > lastRunDate;
+        })
+      : []; // On first run, don't post anything - just set the timestamp
 
-    console.log(`${postedSlugs.size} posts already posted to Bluesky`);
+    console.log(`Found ${newPosts.length} post(s) published since last run`);
 
-    // Find new posts that haven't been posted yet
-    const newPosts = publishablePosts.filter(post => !postedSlugs.has(post.slug));
+    // Update the last run timestamp
+    const currentRunTime = new Date().toISOString();
+    await store.set('last-run-timestamp', currentRunTime);
+    console.log(`Updated last run timestamp to ${currentRunTime}`);
 
     if (newPosts.length === 0) {
       console.log('No new posts to share on Bluesky');
-      return {
-        statusCode: 200,
-        body: JSON.stringify({
-          message: 'No new posts to share',
-          postedCount: postedSlugs.size,
-        }),
-      };
+      return new Response(JSON.stringify({
+        message: lastRunDate ? 'No new posts since last run' : 'First run - timestamp set, will check for new posts next time',
+        lastRun: lastRunDate ? lastRunDate.toISOString() : null,
+        currentRun: currentRunTime,
+      }), {
+        status: 200,
+        headers: { 'Content-Type': 'application/json' }
+      });
     }
 
-    console.log(`Found ${newPosts.length} new post(s) to share on Bluesky`);
+    console.log(`Posting ${newPosts.length} new post(s) to Bluesky`);
 
     const results = [];
     const baseUrl = SITE_URL || 'https://fixthesupremecourt.org';
@@ -90,12 +104,10 @@ const handler = async (event) => {
 
         console.log(`Successfully posted "${title}" to Bluesky`);
 
-        // Add to posted slugs
-        postedSlugs.add(post.slug);
-
         results.push({
           slug: post.slug,
           title,
+          publishDate: post.frontMatter.date,
           success: true,
           uri: response.uri,
         });
@@ -110,28 +122,27 @@ const handler = async (event) => {
       }
     }
 
-    // Update the posted slugs in Netlify Blobs
-    await store.setJSON('posted-slugs', Array.from(postedSlugs));
+    const successCount = results.filter(r => r.success).length;
+    console.log(`Posted ${successCount} of ${newPosts.length} posts to Bluesky`);
 
-    console.log('Updated posted slugs in Netlify Blobs');
-
-    return {
-      statusCode: 200,
-      body: JSON.stringify({
-        message: `Posted ${results.filter(r => r.success).length} of ${newPosts.length} new posts to Bluesky`,
-        results,
-        totalPosted: postedSlugs.size,
-      }),
-    };
+    return new Response(JSON.stringify({
+      message: `Posted ${successCount} of ${newPosts.length} new posts to Bluesky`,
+      lastRun: lastRunDate ? lastRunDate.toISOString() : null,
+      currentRun: currentRunTime,
+      results,
+    }), {
+      status: 200,
+      headers: { 'Content-Type': 'application/json' }
+    });
   } catch (error) {
     console.error('Error in Bluesky posting function:', error);
-    return {
-      statusCode: 500,
-      body: JSON.stringify({
-        error: error.message,
-        stack: error.stack,
-      }),
-    };
+    return new Response(JSON.stringify({
+      error: error.message,
+      stack: error.stack,
+    }), {
+      status: 500,
+      headers: { 'Content-Type': 'application/json' }
+    });
   }
 };
 

@@ -5,11 +5,12 @@ This directory contains Netlify Functions that automatically post new Hugo blog 
 ## Overview
 
 The `post-to-bluesky.mjs` scheduled function runs daily at 9:00 AM EST to:
-1. Scan all Hugo posts in `content/posts/`
-2. Filter out drafts and future-dated posts
-3. Check Netlify Blobs to see which posts have already been posted to Bluesky
-4. Post new articles to Bluesky with title, excerpt, and URL
-5. Track posted articles in Netlify Blobs
+1. Check the last run timestamp from Netlify Blobs
+2. Scan all Hugo posts in `content/posts/`
+3. Filter out drafts and future-dated posts
+4. Find posts published since the last run
+5. Post new articles to Bluesky with title, excerpt, and URL
+6. Update the last run timestamp in Netlify Blobs
 
 ## Setup
 
@@ -85,23 +86,28 @@ Markdown formatting is stripped, and text is truncated to fit within Bluesky's c
 
 ## Tracking Posted Articles
 
-The function uses Netlify Blobs to track which posts have been shared:
+The function uses Netlify Blobs to track the last run time:
 
 - **Store name:** `bluesky-posts`
-- **Key:** `posted-slugs`
-- **Format:** JSON array of post slugs
+- **Key:** `last-run-timestamp`
+- **Format:** ISO 8601 timestamp string
+
+Only posts published **after** the last run timestamp will be posted to Bluesky. This ensures:
+- On first run, nothing is posted (timestamp is set to "now")
+- On subsequent runs, only posts published since the last run are posted
+- No backfilling of old content
 
 You can view or manually edit this data using the Netlify CLI:
 
 ```bash
-# View posted slugs
-netlify blobs:get bluesky-posts posted-slugs
+# View the last run timestamp
+netlify blobs:get bluesky-posts last-run-timestamp
 
-# Manually add a slug (if you want to skip posting something)
-netlify blobs:set bluesky-posts posted-slugs '["slug-1", "slug-2", "slug-3"]'
+# Reset the timestamp to a specific date (posts after this date will be posted next run)
+netlify blobs:set bluesky-posts last-run-timestamp '2025-12-27T00:00:00.000Z'
 
-# Clear all tracking (will repost everything)
-netlify blobs:delete bluesky-posts posted-slugs
+# Clear tracking (next run will set timestamp to "now" and not post anything)
+netlify blobs:delete bluesky-posts last-run-timestamp
 ```
 
 ## Testing Locally
@@ -134,9 +140,11 @@ You can also manually trigger the function through the Netlify UI:
 ### "No new posts to share"
 
 This is normal if:
-- All publishable posts have already been posted
+- This is the first run (timestamp is being set)
+- No posts have been published since the last run
 - All posts are marked as drafts
 - All posts have future publish dates
+- All posts were published before the last run timestamp
 
 ### "Missing BLUESKY_HANDLE or BLUESKY_APP_PASSWORD"
 
@@ -153,6 +161,18 @@ Check that environment variables are set correctly in Netlify site settings.
 - Check the function logs in Netlify dashboard
 - Verify the post isn't a draft (`draft: false` in front matter)
 - Verify the post date isn't in the future
+- Verify the post was published after the last run timestamp
+
+### Manually posting older articles
+
+If you want to post an article that was published before the last run:
+
+```bash
+# Set the timestamp to before the article's publish date
+netlify blobs:set bluesky-posts last-run-timestamp '2025-12-01T00:00:00.000Z'
+
+# Then manually trigger the function or wait for the next scheduled run
+```
 
 ## File Structure
 
@@ -169,15 +189,15 @@ netlify/
 
 1. **Scheduled Execution**: Netlify's scheduler triggers the function daily at 9 AM EST
 2. **Authentication**: Function authenticates with Bluesky using app password
-3. **Fetch Posts**: Reads all markdown files from `content/posts/`
-4. **Filter**: Removes drafts and future-dated posts
-5. **Check Tracking**: Queries Netlify Blobs to see which posts were already shared
-6. **Post New Content**: For each new post:
+3. **Check Last Run**: Retrieves the last run timestamp from Netlify Blobs
+4. **Fetch Posts**: Reads all markdown files from `content/posts/`
+5. **Filter**: Removes drafts, future-dated posts, and posts published before the last run
+6. **Post New Content**: For each post published since last run:
    - Extracts title and excerpt
    - Generates post URL
    - Posts to Bluesky with proper link detection
-   - Updates tracking in Netlify Blobs
-7. **Return Results**: Returns summary of what was posted
+7. **Update Timestamp**: Saves current timestamp to Netlify Blobs for next run
+8. **Return Results**: Returns summary of what was posted
 
 ## Future Enhancements
 

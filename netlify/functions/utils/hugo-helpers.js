@@ -17,7 +17,47 @@ export async function getAllPosts() {
       markdownFiles.map(async (filename) => {
         const filePath = join(postsDirectory, filename);
         const fileContents = await readFile(filePath, 'utf8');
-        const { data, content } = matter(fileContents);
+
+        // Configure gray-matter to parse Hugo's TOML front matter (with +++ delimiters)
+        const { data, content } = matter(fileContents, {
+          delimiters: '+++',
+          engines: {
+            toml: (s) => {
+              // Simple TOML parser for Hugo front matter
+              const lines = s.split('\n');
+              const result = {};
+
+              for (const line of lines) {
+                const trimmed = line.trim();
+                if (!trimmed || trimmed.startsWith('#')) continue;
+
+                const match = trimmed.match(/^(\w+)\s*=\s*(.+)$/);
+                if (match) {
+                  const [, key, value] = match;
+                  // Remove quotes and parse value
+                  let parsedValue = value.trim();
+
+                  // Handle quoted strings
+                  if (parsedValue.startsWith("'") && parsedValue.endsWith("'")) {
+                    parsedValue = parsedValue.slice(1, -1);
+                  }
+
+                  // Handle booleans
+                  if (parsedValue === 'true') parsedValue = true;
+                  if (parsedValue === 'false') parsedValue = false;
+
+                  // Handle numbers
+                  if (/^\d+$/.test(parsedValue)) parsedValue = parseInt(parsedValue, 10);
+
+                  result[key] = parsedValue;
+                }
+              }
+
+              return result;
+            }
+          },
+          language: 'toml'
+        });
 
         // Extract slug from filename (remove .md extension)
         const slug = filename.replace(/\.md$/, '');
