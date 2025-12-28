@@ -3,3 +3,13 @@ public/
 
 # Hugo cache
 .hugo_build.lock
+
+# Node.js
+node_modules/
+package-lock.json
+
+# Environment variables
+.env
+.env.local
+# Local Netlify folder
+.netlify
