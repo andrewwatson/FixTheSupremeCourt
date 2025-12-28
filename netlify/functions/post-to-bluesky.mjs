@@ -84,12 +84,29 @@ const handler = async (event) => {
     for (const post of newPosts) {
       try {
         const title = post.frontMatter.title || post.slug;
-        const excerpt = extractExcerpt(post.content, 200); // Leave room for title and URL
         const url = getPostUrl(post.slug, baseUrl);
+
+        // Calculate how much space is left for the excerpt
+        // Bluesky limit is 300 characters
+        // Format: Title\n\n[excerpt]\n\nURL
+        const maxLength = 300;
+        const separators = '\n\n\n\n'; // 4 characters for the two \n\n separators
+        const reservedLength = title.length + url.length + separators.length;
+        const excerptMaxLength = Math.max(0, maxLength - reservedLength - 10); // -10 for safety margin
+
+        const excerpt = extractExcerpt(post.content, excerptMaxLength);
 
         // Create the Bluesky post text
         // Format: Title\n\nExcerpt\n\nURL
-        const postText = `${title}\n\n${excerpt}\n\n${url}`;
+        let postText = `${title}\n\n${excerpt}\n\n${url}`;
+
+        // Double-check length and truncate if needed
+        if (postText.length > maxLength) {
+          console.warn(`Post text too long (${postText.length} chars), truncating...`);
+          postText = postText.substring(0, maxLength - 3) + '...';
+        }
+
+        console.log(`Post length: ${postText.length}/${maxLength} characters`);
 
         // Use RichText to properly handle facets (links, mentions, etc.)
         const rt = new RichText({ text: postText });
