@@ -1,7 +1,7 @@
 +++
 date = '2026-01-01T00:00:00-05:00'
 draft = false
-title = 'Why Piecemeal Reform Won't Work: The Case for Comprehensive Supreme Court Transformation'
+title = "Why Piecemeal Reform Won't Work: The Case for Comprehensive Supreme Court Transformation"
 author = 'Editor'
 weight = 10
 +++

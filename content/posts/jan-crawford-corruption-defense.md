@@ -1,7 +1,7 @@
 +++
-date = '2026-12-31T00:00:00-05:00'
+date = '2026-01-10T00:00:00-05:00'
 draft = false
-title = 'Jan Crawford's Empty Defense: Why "It's Just Conservative" Doesn't Excuse Supreme Court Corruption'
+title = "Jan Crawford's Empty Defense: Why \"It's Just Conservative\" Doesn't Excuse Supreme Court Corruption"
 author = 'Editor'
 weight = 10
 +++
