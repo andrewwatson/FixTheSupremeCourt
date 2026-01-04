@@ -4,6 +4,11 @@ draft = false
 title = 'Overview'
 type = 'featured'
 weight = 1
+
+[cover]
+image = "/headers/thesis_modern.png"
+alt = "A Stolen Court: How the Supreme Court Lost Its Legitimacy and Why Reform Is Overdue"
+
 +++
 
 # A Stolen Court: How the Supreme Court Lost Its Legitimacy and Why Reform Is Overdue
