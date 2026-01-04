@@ -339,7 +339,7 @@ def create_thumbnail_bold(title, output_path, colors, size=INSTAGRAM_SIZE):
     # Add URL
     url_font_size = int(28 * (size[0] / INSTAGRAM_SIZE[0]))
     url_font = get_font(url_font_size)
-    url = "FixTheSupremeCourt.com"
+    url = "FixTheSupremeCourt.org"
     url_bbox = url_font.getbbox(url)
     url_width = url_bbox[2] - url_bbox[0]
     url_x = (size[0] - url_width) // 2
@@ -389,7 +389,7 @@ def create_thumbnail_modern(title, output_path, colors, size=INSTAGRAM_SIZE):
 
     # Add URL in bottom right
     url_font = get_font(int(26 * scale))
-    url = "FixTheSupremeCourt.com"
+    url = "FixTheSupremeCourt.org"
     url_bbox = url_font.getbbox(url)
     url_width = url_bbox[2] - url_bbox[0]
     url_x = size[0] - url_width - int(40 * scale)
@@ -450,7 +450,7 @@ def create_thumbnail_classic(title, output_path, colors, size=INSTAGRAM_SIZE):
 
     # Add URL centered at bottom
     url_font = get_font(int(30*scale))
-    url = "FixTheSupremeCourt.com"
+    url = "FixTheSupremeCourt.org"
     url_bbox = url_font.getbbox(url)
     url_width = url_bbox[2] - url_bbox[0]
     url_x = (size[0] - url_width) // 2
@@ -490,7 +490,7 @@ def create_thumbnail_minimal(title, output_path, colors, size=INSTAGRAM_SIZE):
 
     # URL - small and subtle
     url_font = get_font(int(24*scale))
-    url = "FixTheSupremeCourt.com"
+    url = "FixTheSupremeCourt.org"
     draw.text((int(120*scale), size[1] - int(80*scale)), url, fill=colors['accent'], font=url_font)
 
     # Add logo and save
@@ -538,7 +538,7 @@ def create_thumbnail_impact(title, output_path, colors, size=INSTAGRAM_SIZE):
 
     # URL with background
     url_font = get_font(int(32*scale), bold=True)
-    url = "FixTheSupremeCourt.com"
+    url = "FixTheSupremeCourt.org"
     url_bbox = url_font.getbbox(url)
     url_width = url_bbox[2] - url_bbox[0]
     url_x = (size[0] - url_width) // 2
