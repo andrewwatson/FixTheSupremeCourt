@@ -205,9 +205,9 @@ body .main {
     overflow: hidden;
 }
 
-/* First element should have no top margin when it's a cover */
+/* Add small top margin to cover images on single posts */
 .post-single > .entry-cover:first-child {
-    margin-top: 0;
+    margin-top: 1.5rem;
 }
 
 .entry-cover img {
