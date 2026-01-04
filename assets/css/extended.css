@@ -66,3 +66,108 @@
 [data-theme="dark"] .featured-post:hover {
     background: rgba(255, 255, 255, 0.06);
 }
+
+/* Remove default article top spacing when cover exists */
+.post-single {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+/* Remove main container top padding for posts */
+.main:has(.post-single) {
+    padding-top: 0;
+}
+
+/* Cover image styling */
+.entry-cover {
+    margin: 0 0 2rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* First element should have no top margin when it's a cover */
+.post-single > .entry-cover:first-child {
+    margin-top: 0;
+}
+
+.entry-cover img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 1.9 / 1; /* Maintain 1200x630 ratio */
+    object-fit: cover;
+}
+
+/* Cover image on post list pages */
+.post-entry .entry-cover {
+    margin-bottom: 1rem;
+}
+
+.post-entry .entry-cover img {
+    transition: transform 0.3s ease;
+}
+
+.post-entry:hover .entry-cover img {
+    transform: scale(1.02);
+}
+
+/* Single post cover */
+.post-single .entry-cover {
+    margin: 0 0 2.5rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive cover images */
+@media (max-width: 768px) {
+    .entry-cover {
+        margin: 0 -1rem 1.5rem -1rem; /* Full bleed on mobile */
+        border-radius: 0;
+    }
+
+    .post-single .entry-cover {
+        margin: 0 -1rem 2rem -1rem;
+    }
+}
+
+/* Dark mode cover adjustments */
+[data-theme="dark"] .post-single .entry-cover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Header adjustments when cover is present */
+.post-header.has-cover {
+    margin-top: 0;
+}
+
+.post-header.has-cover .breadcrumbs {
+    margin-bottom: 1rem;
+}
+
+.post-header.has-cover .post-meta {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+/* Hide title in post listings when cover image contains the title */
+.post-entry .entry-header h2.post-entry-hint-parent {
+    /* Keep for accessibility but visually hide since title is in image */
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* Make the whole post-entry clickable */
+.post-entry {
+    position: relative;
+}
+
+.post-entry .entry-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
