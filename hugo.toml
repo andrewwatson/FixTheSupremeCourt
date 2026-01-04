@@ -6,8 +6,12 @@ theme = 'PaperMod'
 [params]
 mainSections = ['posts', 'featured']
 defaultTheme = 'light'
-
 summaryLength = 500
+
+[params.label]
+text = ""
+icon = "logo_circle.png"
+iconHeight = 60
 
 [pagination]
 pagerSize = 20

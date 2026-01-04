@@ -172,10 +172,14 @@
     background: var(--entry);
 }
 
-/* Make header text much bigger */
-.logo a {
-    font-size: 48px !important;
-    font-weight: 700;
+/* Logo styling */
+.logo a img {
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+.logo a:hover img {
+    transform: scale(1.05);
 }
 
 /* Add padding above header */
