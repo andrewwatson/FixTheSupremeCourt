@@ -4,6 +4,11 @@ draft = false
 title = 'What America Can Learn From International Courts: Term Limits, Retirement Ages, and Democratic Accountability'
 author = 'Editor'
 weight = 10
+
+[cover]
+image = "/headers/international-lessons-reform_modern.png"
+alt = "International Lessons Reform"
+
 +++
 
 ## The United States Is the Outlier

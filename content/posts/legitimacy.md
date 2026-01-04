@@ -3,6 +3,11 @@ date = '2025-09-04T12:00:00-04:00'
 draft = false
 title = 'Legitimacy'
 weight = 10
+
+[cover]
+image = "/headers/legitimacy_modern.png"
+alt = "Legitimacy"
+
 +++
 
 ## The Legitimacy Crisis: A Court Out of Step with America

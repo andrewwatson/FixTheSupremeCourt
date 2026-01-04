@@ -3,6 +3,11 @@ date = '2025-09-05T00:00:00-04:00'
 draft = false
 title = 'Expansion'
 weight = 10
+
+[cover]
+image = "/headers/expansion_modern.png"
+alt = "Expansion"
+
 +++
 
 ## Court Expansion: Actually Normal in American History

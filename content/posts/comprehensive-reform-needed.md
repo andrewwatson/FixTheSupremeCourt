@@ -4,6 +4,11 @@ draft = false
 title = "Why Piecemeal Reform Won't Work: The Case for Comprehensive Supreme Court Transformation"
 author = 'Editor'
 weight = 10
+
+[cover]
+image = "/headers/comprehensive-reform-needed_modern.png"
+alt = "Comprehensive Reform Needed"
+
 +++
 
 ## No Single Fix Will Save Us

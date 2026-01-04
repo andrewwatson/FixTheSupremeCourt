@@ -3,6 +3,11 @@ date = '2025-09-03T19:08:29-04:00'
 draft = false
 title = 'Abortion'
 weight = 10
+
+[cover]
+image = "/headers/abortion_modern.png"
+alt = "Abortion"
+
 +++
 
 ## The Abortion Rights Long Game: Decades of Deception

@@ -4,6 +4,11 @@ draft = false
 title = "Jurisdiction Stripping: Congress's Nuclear Option for Reining In a Rogue Court"
 author = 'Editor'
 weight = 10
+
+[cover]
+image = "/headers/jurisdiction-stripping_modern.png"
+alt = "Jurisdiction Stripping"
+
 +++
 
 ## The Power Congress Forgot It Had

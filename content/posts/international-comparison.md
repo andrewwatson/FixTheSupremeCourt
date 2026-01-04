@@ -4,6 +4,11 @@ draft = false
 title = 'American Exceptionalism: How the U.S. Supreme Court Is the Least Accountable in the Democratic World'
 author = 'Editor'
 weight = 10
+
+[cover]
+image = "/headers/international-comparison_modern.png"
+alt = "International Comparison"
+
 +++
 
 ## The United States Is Alone

@@ -4,6 +4,11 @@ draft = false
 title = 'Three Decisions That Broke American Democracy'
 author = 'Editor'
 weight = 10
+
+[cover]
+image = "/headers/three-decisions-broke-democracy_modern.png"
+alt = "Three Decisions Broke Democracy"
+
 +++
 
 ## How the Roberts Court Dismantled Accountability in One Term

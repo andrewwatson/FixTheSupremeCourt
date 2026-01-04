@@ -3,6 +3,11 @@ date = '2025-09-01T00:00:00-04:00'
 draft = false
 title = 'Powergrab'
 weight = 10
+
+[cover]
+image = "/headers/powergrab_modern.png"
+alt = "Powergrab"
+
 +++
 
 ## The McConnell Power Grab: Hypocrisy in Real Time

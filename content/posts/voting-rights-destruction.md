@@ -4,6 +4,11 @@ draft = false
 title = 'How the Supreme Court Systematically Dismantled Voting Rights'
 author = 'Editor'
 weight = 10
+
+[cover]
+image = "/headers/voting-rights-destruction_modern.png"
+alt = "Voting Rights Destruction"
+
 +++
 
 ## The Day the Voting Rights Act Died

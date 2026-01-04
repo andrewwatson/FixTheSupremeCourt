@@ -4,6 +4,11 @@ draft = false
 title = 'The President Is Now a King: How the Supreme Court Placed Presidents Above the Law'
 author = 'Editor'
 weight = 10
+
+[cover]
+image = "/headers/presidential-immunity_modern.png"
+alt = "Presidential Immunity"
+
 +++
 
 ## "With Fear for Our Democracy, I Dissent"

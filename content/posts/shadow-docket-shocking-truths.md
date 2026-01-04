@@ -3,6 +3,11 @@ date = '2025-12-02T01:41:50-05:00'
 draft = false
 title = "4 Shocking Truths About the Supreme Court's \"Shadow Docket\""
 author = 'Editor'
+
+[cover]
+image = "/headers/shadow-docket-shocking-truths_modern.png"
+alt = "Shadow Docket Shocking Truths"
+
 +++
 
 ## Introduction: The Court Behind the Curtain

@@ -4,6 +4,11 @@ draft = false
 title = "Why the Supreme Court Desperately Needs a Binding Ethics Code"
 author = 'Editor'
 weight = 10
+
+[cover]
+image = "/headers/binding-ethics-code_modern.png"
+alt = "Binding Ethics Code"
+
 +++
 
 ## The Only Court in America Without Enforceable Ethics Rules

@@ -4,6 +4,11 @@ draft = false
 title = "Jan Crawford's Empty Defense: Why \"It's Just Conservative\" Doesn't Excuse Supreme Court Corruption"
 author = 'Editor'
 weight = 10
+
+[cover]
+image = "/headers/jan-crawford-corruption-defense_modern.png"
+alt = "Jan Crawford Corruption Defense"
+
 +++
 
 ## When Access Journalism Becomes Propaganda

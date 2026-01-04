@@ -3,6 +3,11 @@ date = '2025-12-08T18:17:55-05:00'
 draft = false
 title = 'Court Reform Is Everything: Why Breaking the Power of the Six is the Foundation of Progress'
 author = 'Editor'
+
+[cover]
+image = "/headers/reform-is-everything_modern.png"
+alt = "Reform Is Everything"
+
 +++
 
 ## The Uncomfortable Truth

@@ -4,6 +4,11 @@ draft = false
 title = 'Historical Precedents: Jefferson, Lincoln, and FDR All Checked Overreaching Courts'
 author = 'Editor'
 weight = 10
+
+[cover]
+image = "/headers/historical-court-curbing_modern.png"
+alt = "Historical Court Curbing"
+
 +++
 
 ## Court Reform Is American Tradition

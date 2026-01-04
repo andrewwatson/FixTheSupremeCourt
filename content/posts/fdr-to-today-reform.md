@@ -4,6 +4,11 @@ draft = false
 title = 'From FDR to Today: The Long History of Supreme Court Reform Proposals'
 author = 'Editor'
 weight = 10
+
+[cover]
+image = "/headers/fdr-to-today-reform_modern.png"
+alt = "Fdr To Today Reform"
+
 +++
 
 ## Court Reform Across Generations

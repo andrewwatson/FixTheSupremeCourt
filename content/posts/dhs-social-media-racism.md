@@ -4,6 +4,11 @@ draft = false
 title = "When Government Propaganda Turns Fascist: DHS Social Media and the Mainstreaming of White Nationalism"
 author = 'Editor'
 weight = 10
+
+[cover]
+image = "/headers/dhs-social-media-racism_modern.png"
+alt = "Dhs Social Media Racism"
+
 +++
 
 ## Federal Agency or White Nationalist Content Mill?

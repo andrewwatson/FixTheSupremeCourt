@@ -3,6 +3,11 @@ date = '2025-12-09T00:00:00-05:00'
 draft = false
 title = 'Reframing Court Reform: From "Radical" to Essential'
 author = 'Editor'
+
+[cover]
+image = "/headers/reframing-court-reform_modern.png"
+alt = "Reframing Court Reform"
+
 +++
 
 ## The Framing Problem

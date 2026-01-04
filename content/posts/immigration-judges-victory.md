@@ -4,6 +4,11 @@ draft = false
 title = "A Rare Victory: Supreme Court Rejects Trump's Attack on Immigration Judges' Free Speech"
 author = 'Editor'
 weight = 10
+
+[cover]
+image = "/headers/immigration-judges-victory_modern.png"
+alt = "Immigration Judges Victory"
+
 +++
 
 ## The Winning Streak Breaks

@@ -4,6 +4,11 @@ draft = false
 title = 'Religious Favoritism: How the Supreme Court Privileges Christianity Over Secular Values'
 author = 'Editor'
 weight = 10
+
+[cover]
+image = "/headers/religious-favoritism_modern.png"
+alt = "Religious Favoritism"
+
 +++
 
 ## The Court's Religion Problem

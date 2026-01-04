@@ -4,6 +4,11 @@ draft = false
 title = 'The Shadow Docket and Presidential Immunity: How Emergency Orders Enable Autocracy'
 author = 'Editor'
 weight = 10
+
+[cover]
+image = "/headers/shadow-docket-immunity_modern.png"
+alt = "Shadow Docket Immunity"
+
 +++
 
 ## Democracy Dies in the Shadows

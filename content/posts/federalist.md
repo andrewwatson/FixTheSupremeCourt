@@ -3,6 +3,11 @@ date = '2025-09-02T00:00:00-04:00'
 draft = false
 title = 'Federalist Society'
 weight = 10
+
+[cover]
+image = "/headers/federalist_modern.png"
+alt = "Federalist"
+
 +++
 
 ## The Federalist Society Assembly Line

@@ -4,6 +4,11 @@ draft = false
 title = 'Minority Rule: Six Supreme Court Justices from Presidents Who Lost the Popular Vote'
 author = 'Editor'
 weight = 10
+
+[cover]
+image = "/headers/minority-rule-justices_modern.png"
+alt = "Minority Rule Justices"
+
 +++
 
 ## Democracy's Darkest Irony

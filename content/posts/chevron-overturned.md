@@ -4,6 +4,11 @@ draft = false
 title = 'The Court Just Gutted the Administrative State: How Loper Bright Weaponizes Judges Against Experts'
 author = 'Editor'
 weight = 10
+
+[cover]
+image = "/headers/chevron-overturned_modern.png"
+alt = "Chevron Overturned"
+
 +++
 
 ## Forty Years of Regulatory Protection, Gone Overnight

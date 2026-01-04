@@ -4,6 +4,11 @@ draft = false
 title = "Brown University, Bruen, and the Blood on the Supreme Court's Hands"
 author = 'Editor'
 weight = 10
+
+[cover]
+image = "/headers/bruen-gun-violence_modern.png"
+alt = "Bruen Gun Violence"
+
 +++
 
 ## Two Dead, Nine Wounded—And Counting

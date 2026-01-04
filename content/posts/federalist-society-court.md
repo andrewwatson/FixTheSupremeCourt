@@ -4,6 +4,11 @@ draft = false
 title = 'The Federalist Society Supreme Court: How Dark Money Bought the Judiciary'
 author = 'Editor'
 weight = 10
+
+[cover]
+image = "/headers/federalist-society-court_modern.png"
+alt = "Federalist Society Court"
+
 +++
 
 ## Six Justices, One Organization, Billionaire Funding

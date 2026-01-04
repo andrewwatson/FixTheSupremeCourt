@@ -4,6 +4,11 @@ draft = false
 title = 'How Citizens United Sold American Democracy to the Highest Bidder'
 author = 'Editor'
 weight = 10
+
+[cover]
+image = "/headers/citizens-united_modern.png"
+alt = "Citizens United"
+
 +++
 
 ## "A Rejection of the Common Sense of the American People"

@@ -4,6 +4,11 @@ draft = false
 title = 'Justice Alito: The Ethics Scandals, Insurrection Flags, and Breathtaking Hypocrisy'
 author = 'Editor'
 weight = 10
+
+[cover]
+image = "/headers/alito-hypocrisy_modern.png"
+alt = "Alito Hypocrisy"
+
 +++
 
 ## A Justice Who Believes He's Above Accountability

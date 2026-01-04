@@ -4,6 +4,11 @@ draft = false
 title = 'Selling Citizenship: How the Trump Gold Card Exposes Presidential Overreach'
 author = 'Editor'
 weight = 10
+
+[cover]
+image = "/headers/trump-card_modern.png"
+alt = "Trump Card"
+
 +++
 
 ## A Million-Dollar Fast Track to Bypass Congress
