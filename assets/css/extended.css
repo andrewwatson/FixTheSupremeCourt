@@ -79,13 +79,11 @@
     margin-top: 0 !important;
 }
 
-/* Override any auto margins on main - preserve horizontal centering */
-/* .main {
-    margin-top: 0 !important;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-} */
+/* Override theme's margin and padding on main for posts with covers */
+.main:has(.post-single .entry-cover) {
+    margin: 0 auto !important;
+    padding-top: 0 !important;
+}
 
 /* Cover image styling */
 .entry-cover {
