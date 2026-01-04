@@ -73,16 +73,18 @@
     margin-top: 0 !important;
 }
 
-/* Remove main container top padding for posts */
-.main:has(.post-single) {
-    padding-top: 0 !important;
+/* CRITICAL: Override PaperMod theme's margin: auto on .main */
+/* This removes top/bottom auto margin but preserves horizontal centering */
+body .main {
     margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
 }
 
-/* Override theme's margin and padding on main for posts with covers */
-.main:has(.post-single .entry-cover) {
-    margin: 0 auto !important;
-    padding-top: 0 !important;
+/* Ensure horizontal centering is preserved */
+body .main {
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 /* Cover image styling */
