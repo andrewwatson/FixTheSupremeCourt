@@ -80,12 +80,12 @@
 }
 
 /* Override any auto margins on main - preserve horizontal centering */
-.main {
+/* .main {
     margin-top: 0 !important;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 /* Cover image styling */
 .entry-cover {
