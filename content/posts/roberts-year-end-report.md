@@ -1,5 +1,5 @@
 +++
-date = '2026-01-03T23:30:00-05:00'
+date = '2026-01-02T23:30:00-05:00'
 draft = false
 title = "Chief Justice Roberts' Year-End Report: A Masterclass in Avoiding the Elephant in the Room"
 author = 'Editor'
