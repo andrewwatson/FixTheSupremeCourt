@@ -9,6 +9,7 @@ weight = 10
 image = "/headers/confirmation-process_modern.png"
 alt = "Confirmation Process"
 
+tags = ["partisanship", "democracy", "legitimacy"]
 +++
 
 ## How Republicans Stole Two Supreme Court Seats

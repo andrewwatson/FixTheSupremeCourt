@@ -9,6 +9,7 @@ weight = 10
 image = "/headers/voting-rights-destruction_modern.png"
 alt = "Voting Rights Destruction"
 
+tags = ["democracy", "voting rights", "civil rights"]
 +++
 
 ## The Day the Voting Rights Act Died

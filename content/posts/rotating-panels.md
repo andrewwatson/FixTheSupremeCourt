@@ -9,6 +9,7 @@ weight = 10
 image = "/headers/rotating-panels_modern.png"
 alt = "Rotating Panels"
 
+tags = ["reform", "court structure"]
 +++
 
 ## Taking the Politics Out of Court Appointments

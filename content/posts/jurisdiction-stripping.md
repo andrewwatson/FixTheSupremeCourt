@@ -9,6 +9,7 @@ weight = 10
 image = "/headers/jurisdiction-stripping_modern.png"
 alt = "Jurisdiction Stripping"
 
+tags = ["reform", "congressional power"]
 +++
 
 ## The Power Congress Forgot It Had

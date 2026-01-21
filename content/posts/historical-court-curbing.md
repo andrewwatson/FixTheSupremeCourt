@@ -9,6 +9,7 @@ weight = 10
 image = "/headers/historical-court-curbing_modern.png"
 alt = "Historical Court Curbing"
 
+tags = ["reform", "history"]
 +++
 
 ## Court Reform Is American Tradition

@@ -8,6 +8,7 @@ author = 'Editor'
 image = "/headers/shadow-docket-shocking-truths_modern.png"
 alt = "Shadow Docket Shocking Truths"
 
+tags = ["shadow docket", "transparency"]
 +++
 
 ## Introduction: The Court Behind the Curtain

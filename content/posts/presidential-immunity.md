@@ -9,6 +9,7 @@ weight = 10
 image = "/headers/presidential-immunity_modern.png"
 alt = "Presidential Immunity"
 
+tags = ["executive power", "immunity", "democracy"]
 +++
 
 ## "With Fear for Our Democracy, I Dissent"

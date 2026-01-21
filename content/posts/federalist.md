@@ -8,6 +8,7 @@ weight = 10
 image = "/headers/federalist_modern.png"
 alt = "Federalist"
 
+tags = ["partisanship", "dark money", "judicial capture"]
 +++
 
 ## The Federalist Society Assembly Line

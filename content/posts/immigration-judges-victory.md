@@ -9,6 +9,7 @@ weight = 10
 image = "/headers/immigration-judges-victory_modern.png"
 alt = "Immigration Judges Victory"
 
+tags = ["civil rights", "immigration", "transparency"]
 +++
 
 ## The Winning Streak Breaks

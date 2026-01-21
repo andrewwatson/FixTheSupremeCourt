@@ -9,6 +9,7 @@ weight = 10
 image = "/headers/comprehensive-reform-needed_modern.png"
 alt = "Comprehensive Reform Needed"
 
+tags = ["reform", "democracy"]
 +++
 
 ## No Single Fix Will Save Us

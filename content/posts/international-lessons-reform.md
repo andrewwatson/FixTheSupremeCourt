@@ -9,6 +9,7 @@ weight = 10
 image = "/headers/international-lessons-reform_modern.png"
 alt = "International Lessons Reform"
 
+tags = ["reform", "transparency"]
 +++
 
 ## The United States Is the Outlier

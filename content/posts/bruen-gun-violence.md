@@ -9,6 +9,7 @@ weight = 10
 image = "/headers/bruen-gun-violence_modern.png"
 alt = "Bruen Gun Violence"
 
+tags = ["gun violence", "civil rights"]
 +++
 
 ## Two Dead, Nine Wounded—And Counting

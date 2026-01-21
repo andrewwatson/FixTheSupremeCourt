@@ -9,6 +9,7 @@ weight = 10
 image = "/headers/international-comparison_modern.png"
 alt = "International Comparison"
 
+tags = ["reform", "transparency", "ethics"]
 +++
 
 ## The United States Is Alone

@@ -9,6 +9,7 @@ weight = 10
 image = "/headers/religious-favoritism_modern.png"
 alt = "Religious Favoritism"
 
+tags = ["civil rights", "religion", "partisanship"]
 +++
 
 ## The Court's Religion Problem

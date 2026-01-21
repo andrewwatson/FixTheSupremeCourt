@@ -9,6 +9,7 @@ weight = 10
 image = "/headers/alito-hypocrisy_modern.png"
 alt = "Alito Hypocrisy"
 
+tags = ["corruption", "ethics", "partisanship"]
 +++
 
 ## A Justice Who Believes He's Above Accountability

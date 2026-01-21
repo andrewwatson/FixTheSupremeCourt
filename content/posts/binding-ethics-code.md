@@ -9,6 +9,7 @@ weight = 10
 image = "/headers/binding-ethics-code_modern.png"
 alt = "Binding Ethics Code"
 
+tags = ["ethics", "reform", "transparency"]
 +++
 
 ## The Only Court in America Without Enforceable Ethics Rules

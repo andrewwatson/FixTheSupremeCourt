@@ -8,6 +8,7 @@ author = 'Editor'
 image = "/headers/kavanaugh-stops-citizens_modern.png"
 alt = "Kavanaugh Stops Citizens"
 
+tags = ["civil rights", "immigration", "executive power"]
 +++
 
 Justice Brett Kavanaugh assured Americans that immigration enforcement stops targeting individuals based on their appearance would be brief and harmless—citizens would "promptly" be released after proving their status. A new ProPublica investigation reveals the disturbing reality: more than 170 American citizens have been detained, dragged, beaten, and held for days without access to lawyers or even phone calls during the first nine months of President Trump's second administration.

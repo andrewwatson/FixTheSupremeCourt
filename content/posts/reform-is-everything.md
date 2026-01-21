@@ -8,6 +8,7 @@ author = 'Editor'
 image = "/headers/reform-is-everything_modern.png"
 alt = "Reform Is Everything"
 
+tags = ["reform", "democracy"]
 +++
 
 ## The Uncomfortable Truth

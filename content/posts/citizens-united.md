@@ -9,6 +9,7 @@ weight = 10
 image = "/headers/citizens-united_modern.png"
 alt = "Citizens United"
 
+tags = ["corporate power", "democracy", "money in politics"]
 +++
 
 ## "A Rejection of the Common Sense of the American People"

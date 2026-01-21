@@ -8,6 +8,7 @@ weight = 10
 image = "/headers/powergrab_modern.png"
 alt = "Powergrab"
 
+tags = ["partisanship", "democracy", "legitimacy"]
 +++
 
 ## The McConnell Power Grab: Hypocrisy in Real Time

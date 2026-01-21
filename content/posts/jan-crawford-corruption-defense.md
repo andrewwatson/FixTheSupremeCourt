@@ -9,6 +9,7 @@ weight = 10
 image = "/headers/jan-crawford-corruption-defense_modern.png"
 alt = "Jan Crawford Corruption Defense"
 
+tags = ["corruption", "ethics", "media"]
 +++
 
 ## When Access Journalism Becomes Propaganda

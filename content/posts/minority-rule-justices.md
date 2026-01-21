@@ -9,6 +9,7 @@ weight = 10
 image = "/headers/minority-rule-justices_modern.png"
 alt = "Minority Rule Justices"
 
+tags = ["democracy", "legitimacy", "partisanship"]
 +++
 
 ## Democracy's Darkest Irony

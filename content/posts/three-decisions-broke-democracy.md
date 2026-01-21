@@ -9,6 +9,7 @@ weight = 10
 image = "/headers/three-decisions-broke-democracy_modern.png"
 alt = "Three Decisions Broke Democracy"
 
+tags = ["democracy", "executive power", "regulatory capture"]
 +++
 
 ## How the Roberts Court Dismantled Accountability in One Term

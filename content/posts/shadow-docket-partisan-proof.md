@@ -9,6 +9,7 @@ weight = 10
 image = "/headers/shadow-docket-partisan-proof_modern.png"
 alt = "Shadow Docket Partisan Proof"
 
+tags = ["shadow docket", "transparency", "partisanship"]
 +++
 
 ## The Numbers Don't Lie

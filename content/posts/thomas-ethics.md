@@ -9,6 +9,7 @@ weight = 10
 image = "/headers/thomas-ethics_modern.png"
 alt = "Thomas Ethics"
 
+tags = ["corruption", "ethics"]
 +++
 
 ## A Supreme Court Justice for Sale

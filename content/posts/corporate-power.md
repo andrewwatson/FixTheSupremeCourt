@@ -9,6 +9,7 @@ weight = 10
 image = "/headers/corporate-power_modern.png"
 alt = "Corporate Power"
 
+tags = ["corporate power", "democracy"]
 +++
 
 ## Corporations as Super-Citizens

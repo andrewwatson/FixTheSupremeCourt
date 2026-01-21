@@ -9,6 +9,7 @@ weight = 10
 image = "/headers/fdr-to-today-reform_modern.png"
 alt = "Fdr To Today Reform"
 
+tags = ["reform", "history"]
 +++
 
 ## Court Reform Across Generations

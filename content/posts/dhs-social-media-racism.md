@@ -9,6 +9,7 @@ weight = 10
 image = "/headers/dhs-social-media-racism_modern.png"
 alt = "Dhs Social Media Racism"
 
+tags = ["civil rights", "executive power", "immigration"]
 +++
 
 ## Federal Agency or White Nationalist Content Mill?

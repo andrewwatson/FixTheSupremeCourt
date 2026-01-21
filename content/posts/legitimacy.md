@@ -8,6 +8,7 @@ weight = 10
 image = "/headers/legitimacy_modern.png"
 alt = "Legitimacy"
 
+tags = ["legitimacy", "democracy", "partisanship"]
 +++
 
 ## The Legitimacy Crisis: A Court Out of Step with America

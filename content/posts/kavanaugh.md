@@ -8,6 +8,7 @@ author = 'Editor'
 image = "/headers/kavanaugh_modern.png"
 alt = "Kavanaugh"
 
+tags = ["civil rights", "immigration", "partisanship"]
 +++
 
 The Supreme Court's recent decision permitting Immigration and Customs Enforcement (ICE) to detain individuals based solely on race, language, occupation, or geographic location represents a troubling erosion of constitutional protections. What makes this decision particularly concerning is Justice Brett Kavanaugh's concurring opinion, which provides additional justification for what amounts to institutionalized racial profiling.

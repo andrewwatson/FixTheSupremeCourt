@@ -9,6 +9,7 @@ weight = 10
 image = "/headers/chevron-overturned_modern.png"
 alt = "Chevron Overturned"
 
+tags = ["corporate power", "regulatory capture", "executive power"]
 +++
 
 ## Forty Years of Regulatory Protection, Gone Overnight

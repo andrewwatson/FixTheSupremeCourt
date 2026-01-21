@@ -8,6 +8,7 @@ weight = 10
 image = "/headers/expansion_modern.png"
 alt = "Expansion"
 
+tags = ["reform", "court expansion"]
 +++
 
 ## Court Expansion: Actually Normal in American History

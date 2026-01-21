@@ -9,6 +9,7 @@ weight = 10
 image = "/headers/doj-abandons-good-investigation_modern.png"
 alt = "DOJ Abandons Good Investigation"
 
+tags = ["executive power", "immunity", "civil rights", "transparency"]
 +++
 
 ## When Justice Looks Away

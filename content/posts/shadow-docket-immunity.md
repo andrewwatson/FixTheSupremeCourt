@@ -9,6 +9,7 @@ weight = 10
 image = "/headers/shadow-docket-immunity_modern.png"
 alt = "Shadow Docket Immunity"
 
+tags = ["shadow docket", "transparency", "executive power"]
 +++
 
 ## Democracy Dies in the Shadows

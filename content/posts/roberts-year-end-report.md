@@ -8,6 +8,7 @@ author = 'Editor'
 image = "/headers/roberts-year-end-report_modern.png"
 alt = "Roberts Year End Report"
 
+tags = ["corruption", "transparency", "ethics"]
 +++
 
 ## When Words Ring Hollow

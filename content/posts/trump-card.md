@@ -9,6 +9,7 @@ weight = 10
 image = "/headers/trump-card_modern.png"
 alt = "Trump Card"
 
+tags = ["executive power", "immigration", "corruption"]
 +++
 
 ## A Million-Dollar Fast Track to Bypass Congress

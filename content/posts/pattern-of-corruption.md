@@ -9,6 +9,7 @@ weight = 10
 image = "/headers/pattern-of-corruption_modern.png"
 alt = "Pattern Of Corruption"
 
+tags = ["corruption", "ethics", "transparency"]
 +++
 
 ## Two Justices, Millions in Gifts, Zero Consequences

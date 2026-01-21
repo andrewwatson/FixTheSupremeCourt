@@ -8,6 +8,7 @@ weight = 10
 image = "/headers/abortion_modern.png"
 alt = "Abortion"
 
+tags = ["civil rights", "partisanship", "legitimacy"]
 +++
 
 ## The Abortion Rights Long Game: Decades of Deception
