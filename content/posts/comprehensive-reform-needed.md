@@ -5,11 +5,11 @@ title = "Why Piecemeal Reform Won't Work: The Case for Comprehensive Supreme Cou
 author = 'Editor'
 weight = 10
 
+tags = ["reform", "democracy"]
+
 [cover]
 image = "/headers/comprehensive-reform-needed_modern.png"
 alt = "Comprehensive Reform Needed"
-
-tags = ["reform", "democracy"]
 +++
 
 ## No Single Fix Will Save Us

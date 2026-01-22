@@ -5,11 +5,11 @@ title = 'The Shadow Docket and Presidential Immunity: How Emergency Orders Enabl
 author = 'Editor'
 weight = 10
 
+tags = ["shadow docket", "transparency", "executive power"]
+
 [cover]
 image = "/headers/shadow-docket-immunity_modern.png"
 alt = "Shadow Docket Immunity"
-
-tags = ["shadow docket", "transparency", "executive power"]
 +++
 
 ## Democracy Dies in the Shadows

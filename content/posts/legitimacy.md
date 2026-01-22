@@ -4,11 +4,11 @@ draft = false
 title = 'Legitimacy'
 weight = 10
 
+tags = ["legitimacy", "democracy", "partisanship"]
+
 [cover]
 image = "/headers/legitimacy_modern.png"
 alt = "Legitimacy"
-
-tags = ["legitimacy", "democracy", "partisanship"]
 +++
 
 ## The Legitimacy Crisis: A Court Out of Step with America

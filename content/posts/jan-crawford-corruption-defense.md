@@ -5,11 +5,11 @@ title = "Jan Crawford's Empty Defense: Why \"It's Just Conservative\" Doesn't Ex
 author = 'Editor'
 weight = 10
 
+tags = ["corruption", "ethics", "media"]
+
 [cover]
 image = "/headers/jan-crawford-corruption-defense_modern.png"
 alt = "Jan Crawford Corruption Defense"
-
-tags = ["corruption", "ethics", "media"]
 +++
 
 ## When Access Journalism Becomes Propaganda

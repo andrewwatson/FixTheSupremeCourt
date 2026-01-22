@@ -4,11 +4,11 @@ draft = false
 title = 'Federalist Society'
 weight = 10
 
+tags = ["partisanship", "dark money", "judicial capture"]
+
 [cover]
 image = "/headers/federalist_modern.png"
 alt = "Federalist"
-
-tags = ["partisanship", "dark money", "judicial capture"]
 +++
 
 ## The Federalist Society Assembly Line

@@ -5,11 +5,11 @@ title = 'The President Is Now a King: How the Supreme Court Placed Presidents Ab
 author = 'Editor'
 weight = 10
 
+tags = ["executive power", "immunity", "democracy"]
+
 [cover]
 image = "/headers/presidential-immunity_modern.png"
 alt = "Presidential Immunity"
-
-tags = ["executive power", "immunity", "democracy"]
 +++
 
 ## "With Fear for Our Democracy, I Dissent"

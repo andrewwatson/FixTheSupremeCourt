@@ -5,11 +5,11 @@ title = 'Justice Alito: The Ethics Scandals, Insurrection Flags, and Breathtakin
 author = 'Editor'
 weight = 10
 
+tags = ["corruption", "ethics", "partisanship"]
+
 [cover]
 image = "/headers/alito-hypocrisy_modern.png"
 alt = "Alito Hypocrisy"
-
-tags = ["corruption", "ethics", "partisanship"]
 +++
 
 ## A Justice Who Believes He's Above Accountability

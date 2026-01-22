@@ -5,11 +5,11 @@ title = 'What America Can Learn From International Courts: Term Limits, Retireme
 author = 'Editor'
 weight = 10
 
+tags = ["reform", "transparency"]
+
 [cover]
 image = "/headers/international-lessons-reform_modern.png"
 alt = "International Lessons Reform"
-
-tags = ["reform", "transparency"]
 +++
 
 ## The United States Is the Outlier

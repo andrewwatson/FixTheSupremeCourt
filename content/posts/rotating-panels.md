@@ -5,11 +5,11 @@ title = "Rotating Judicial Panels: A Bold Solution to Supreme Court Partisanship
 author = 'Editor'
 weight = 10
 
+tags = ["reform", "court structure"]
+
 [cover]
 image = "/headers/rotating-panels_modern.png"
 alt = "Rotating Panels"
-
-tags = ["reform", "court structure"]
 +++
 
 ## Taking the Politics Out of Court Appointments

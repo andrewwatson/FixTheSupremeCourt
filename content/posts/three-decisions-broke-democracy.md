@@ -5,11 +5,11 @@ title = 'Three Decisions That Broke American Democracy'
 author = 'Editor'
 weight = 10
 
+tags = ["democracy", "executive power", "regulatory capture"]
+
 [cover]
 image = "/headers/three-decisions-broke-democracy_modern.png"
 alt = "Three Decisions Broke Democracy"
-
-tags = ["democracy", "executive power", "regulatory capture"]
 +++
 
 ## How the Roberts Court Dismantled Accountability in One Term

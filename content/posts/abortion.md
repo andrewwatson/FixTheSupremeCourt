@@ -4,11 +4,11 @@ draft = false
 title = 'Abortion'
 weight = 10
 
+tags = ["civil rights", "partisanship", "legitimacy"]
+
 [cover]
 image = "/headers/abortion_modern.png"
 alt = "Abortion"
-
-tags = ["civil rights", "partisanship", "legitimacy"]
 +++
 
 ## The Abortion Rights Long Game: Decades of Deception

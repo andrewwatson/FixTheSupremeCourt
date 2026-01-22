@@ -4,11 +4,11 @@ draft = false
 title = 'Court Reform Is Everything: Why Breaking the Power of the Six is the Foundation of Progress'
 author = 'Editor'
 
+tags = ["reform", "democracy"]
+
 [cover]
 image = "/headers/reform-is-everything_modern.png"
 alt = "Reform Is Everything"
-
-tags = ["reform", "democracy"]
 +++
 
 ## The Uncomfortable Truth

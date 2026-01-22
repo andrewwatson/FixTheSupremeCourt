@@ -5,11 +5,11 @@ title = 'The Clarence Thomas Scandal: $4.75 Million in Gifts and Zero Accountabi
 author = 'Editor'
 weight = 10
 
+tags = ["corruption", "ethics"]
+
 [cover]
 image = "/headers/thomas-ethics_modern.png"
 alt = "Thomas Ethics"
-
-tags = ["corruption", "ethics"]
 +++
 
 ## A Supreme Court Justice for Sale

@@ -5,11 +5,11 @@ title = "The Shadow Docket Proves It: This Court Isn't Conservative—It's Parti
 author = 'Editor'
 weight = 10
 
+tags = ["shadow docket", "transparency", "partisanship"]
+
 [cover]
 image = "/headers/shadow-docket-partisan-proof_modern.png"
 alt = "Shadow Docket Partisan Proof"
-
-tags = ["shadow docket", "transparency", "partisanship"]
 +++
 
 ## The Numbers Don't Lie

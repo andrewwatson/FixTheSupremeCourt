@@ -5,11 +5,11 @@ title = 'Minority Rule: Six Supreme Court Justices from Presidents Who Lost the 
 author = 'Editor'
 weight = 10
 
+tags = ["democracy", "legitimacy", "partisanship"]
+
 [cover]
 image = "/headers/minority-rule-justices_modern.png"
 alt = "Minority Rule Justices"
-
-tags = ["democracy", "legitimacy", "partisanship"]
 +++
 
 ## Democracy's Darkest Irony

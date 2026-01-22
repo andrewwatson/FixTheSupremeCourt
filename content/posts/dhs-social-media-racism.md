@@ -5,11 +5,11 @@ title = "When Government Propaganda Turns Fascist: DHS Social Media and the Main
 author = 'Editor'
 weight = 10
 
+tags = ["civil rights", "executive power", "immigration"]
+
 [cover]
 image = "/headers/dhs-social-media-racism_modern.png"
 alt = "Dhs Social Media Racism"
-
-tags = ["civil rights", "executive power", "immigration"]
 +++
 
 ## Federal Agency or White Nationalist Content Mill?

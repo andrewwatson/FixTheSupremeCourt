@@ -4,11 +4,11 @@ draft = false
 title = "Chief Justice Roberts' Year-End Report: A Masterclass in Avoiding the Elephant in the Room"
 author = 'Editor'
 
+tags = ["corruption", "transparency", "ethics"]
+
 [cover]
 image = "/headers/roberts-year-end-report_modern.png"
 alt = "Roberts Year End Report"
-
-tags = ["corruption", "transparency", "ethics"]
 +++
 
 ## When Words Ring Hollow

@@ -4,11 +4,11 @@ draft = false
 title = 'Expansion'
 weight = 10
 
+tags = ["reform", "court expansion"]
+
 [cover]
 image = "/headers/expansion_modern.png"
 alt = "Expansion"
-
-tags = ["reform", "court expansion"]
 +++
 
 ## Court Expansion: Actually Normal in American History

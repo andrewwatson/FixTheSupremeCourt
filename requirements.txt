@@ -1,1 +1,11 @@
-requests>=2.31.0
+# Python dependencies for FixTheSupremeCourt.com tools
+
+# Image generation for social media thumbnails
+Pillow>=10.0.0
+
+# TOML parsing for Hugo front matter
+tomli>=2.0.0
+
+# Optional: For future enhancements
+# requests>=2.31.0  # For API integrations
+# python-dotenv>=1.0.0  # For environment variables

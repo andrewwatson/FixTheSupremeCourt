@@ -4,11 +4,11 @@ draft = false
 title = 'Powergrab'
 weight = 10
 
+tags = ["partisanship", "democracy", "legitimacy"]
+
 [cover]
 image = "/headers/powergrab_modern.png"
 alt = "Powergrab"
-
-tags = ["partisanship", "democracy", "legitimacy"]
 +++
 
 ## The McConnell Power Grab: Hypocrisy in Real Time

@@ -5,11 +5,11 @@ title = 'The Court Just Gutted the Administrative State: How Loper Bright Weapon
 author = 'Editor'
 weight = 10
 
+tags = ["corporate power", "regulatory capture", "executive power"]
+
 [cover]
 image = "/headers/chevron-overturned_modern.png"
 alt = "Chevron Overturned"
-
-tags = ["corporate power", "regulatory capture", "executive power"]
 +++
 
 ## Forty Years of Regulatory Protection, Gone Overnight

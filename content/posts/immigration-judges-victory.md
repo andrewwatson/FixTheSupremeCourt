@@ -5,11 +5,11 @@ title = "A Rare Victory: Supreme Court Rejects Trump's Attack on Immigration Jud
 author = 'Editor'
 weight = 10
 
+tags = ["civil rights", "immigration", "transparency"]
+
 [cover]
 image = "/headers/immigration-judges-victory_modern.png"
 alt = "Immigration Judges Victory"
-
-tags = ["civil rights", "immigration", "transparency"]
 +++
 
 ## The Winning Streak Breaks

@@ -5,11 +5,11 @@ title = "DOJ Abandons Investigation Into Renee Good's Killing: The Supreme Court
 author = 'Editor'
 weight = 10
 
+tags = ["executive power", "immunity", "civil rights", "transparency"]
+
 [cover]
 image = "/headers/doj-abandons-good-investigation_modern.png"
 alt = "DOJ Abandons Good Investigation"
-
-tags = ["executive power", "immunity", "civil rights", "transparency"]
 +++
 
 ## When Justice Looks Away

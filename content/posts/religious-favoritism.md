@@ -5,11 +5,11 @@ title = 'Religious Favoritism: How the Supreme Court Privileges Christianity Ove
 author = 'Editor'
 weight = 10
 
+tags = ["civil rights", "religion", "partisanship"]
+
 [cover]
 image = "/headers/religious-favoritism_modern.png"
 alt = "Religious Favoritism"
-
-tags = ["civil rights", "religion", "partisanship"]
 +++
 
 ## The Court's Religion Problem

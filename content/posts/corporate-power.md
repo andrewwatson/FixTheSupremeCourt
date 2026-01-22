@@ -5,11 +5,11 @@ title = 'Beyond Citizens United: How the Supreme Court Expanded Corporate Power 
 author = 'Editor'
 weight = 10
 
+tags = ["corporate power", "democracy"]
+
 [cover]
 image = "/headers/corporate-power_modern.png"
 alt = "Corporate Power"
-
-tags = ["corporate power", "democracy"]
 +++
 
 ## Corporations as Super-Citizens

@@ -5,11 +5,11 @@ title = 'A Pattern of Corruption: Why Self-Policing Has Failed at the Supreme Co
 author = 'Editor'
 weight = 10
 
+tags = ["corruption", "ethics", "transparency"]
+
 [cover]
 image = "/headers/pattern-of-corruption_modern.png"
 alt = "Pattern Of Corruption"
-
-tags = ["corruption", "ethics", "transparency"]
 +++
 
 ## Two Justices, Millions in Gifts, Zero Consequences

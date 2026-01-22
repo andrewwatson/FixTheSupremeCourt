@@ -5,11 +5,11 @@ title = 'Selling Citizenship: How the Trump Gold Card Exposes Presidential Overr
 author = 'Editor'
 weight = 10
 
+tags = ["executive power", "immigration", "corruption"]
+
 [cover]
 image = "/headers/trump-card_modern.png"
 alt = "Trump Card"
-
-tags = ["executive power", "immigration", "corruption"]
 +++
 
 ## A Million-Dollar Fast Track to Bypass Congress

@@ -5,11 +5,11 @@ title = 'How Citizens United Sold American Democracy to the Highest Bidder'
 author = 'Editor'
 weight = 10
 
+tags = ["corporate power", "democracy", "money in politics"]
+
 [cover]
 image = "/headers/citizens-united_modern.png"
 alt = "Citizens United"
-
-tags = ["corporate power", "democracy", "money in politics"]
 +++
 
 ## "A Rejection of the Common Sense of the American People"

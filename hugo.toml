@@ -15,3 +15,7 @@ iconHeight = 60
 
 [pagination]
 pagerSize = 20
+
+[taxonomies]
+tag = "tags"
+category = "categories"

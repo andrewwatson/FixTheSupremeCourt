@@ -5,11 +5,11 @@ title = "Jurisdiction Stripping: Congress's Nuclear Option for Reining In a Rogu
 author = 'Editor'
 weight = 10
 
+tags = ["reform", "congressional power"]
+
 [cover]
 image = "/headers/jurisdiction-stripping_modern.png"
 alt = "Jurisdiction Stripping"
-
-tags = ["reform", "congressional power"]
 +++
 
 ## The Power Congress Forgot It Had

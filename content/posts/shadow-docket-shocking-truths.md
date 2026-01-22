@@ -4,11 +4,11 @@ draft = false
 title = "4 Shocking Truths About the Supreme Court's \"Shadow Docket\""
 author = 'Editor'
 
+tags = ["shadow docket", "transparency"]
+
 [cover]
 image = "/headers/shadow-docket-shocking-truths_modern.png"
 alt = "Shadow Docket Shocking Truths"
-
-tags = ["shadow docket", "transparency"]
 +++
 
 ## Introduction: The Court Behind the Curtain

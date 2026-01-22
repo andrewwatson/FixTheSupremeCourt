@@ -5,11 +5,11 @@ title = 'Historical Precedents: Jefferson, Lincoln, and FDR All Checked Overreac
 author = 'Editor'
 weight = 10
 
+tags = ["reform", "history"]
+
 [cover]
 image = "/headers/historical-court-curbing_modern.png"
 alt = "Historical Court Curbing"
-
-tags = ["reform", "history"]
 +++
 
 ## Court Reform Is American Tradition

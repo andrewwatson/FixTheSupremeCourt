@@ -5,11 +5,11 @@ title = 'American Exceptionalism: How the U.S. Supreme Court Is the Least Accoun
 author = 'Editor'
 weight = 10
 
+tags = ["reform", "transparency", "ethics"]
+
 [cover]
 image = "/headers/international-comparison_modern.png"
 alt = "International Comparison"
-
-tags = ["reform", "transparency", "ethics"]
 +++
 
 ## The United States Is Alone

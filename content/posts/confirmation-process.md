@@ -5,11 +5,11 @@ title = 'The Broken Confirmation Process: From Garland to Barrett'
 author = 'Editor'
 weight = 10
 
+tags = ["partisanship", "democracy", "legitimacy"]
+
 [cover]
 image = "/headers/confirmation-process_modern.png"
 alt = "Confirmation Process"
-
-tags = ["partisanship", "democracy", "legitimacy"]
 +++
 
 ## How Republicans Stole Two Supreme Court Seats
