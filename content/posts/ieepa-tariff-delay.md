@@ -7,7 +7,7 @@ weight = 10
 tags = ["executive power", "corruption", "partisanship"]
 
 [cover]
-image = "/headers/ieepa_tariff_delay.png"
+image = "/headers/ieepa-tariff-delay_modern.png"
 alt = "Supreme Court delays ruling on presidential tariff authority"
 +++
 

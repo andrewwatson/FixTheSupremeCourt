@@ -7,7 +7,7 @@ weight = 10
 tags = ["corruption", "ethics", "hypocrisy"]
 
 [cover]
-image = "/headers/judicial-conflicts-comparison.png"
+image = "/headers/judicial-conflicts-comparison_modern.png"
 alt = "Comparing judicial conflicts of interest between district courts and Supreme Court"
 +++
 
