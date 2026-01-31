@@ -18,3 +18,5 @@ package-lock.json
 venv/
 *.pyc
 __pycache__/
+.DS_Store
+static/.DS_Store
