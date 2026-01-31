@@ -22,23 +22,24 @@ This is a Hugo static site project called "FixTheSupremeCourt". Hugo is a fast s
 
 ## Project Structure
 
-This is a standard Hugo site with the following key directories:
+This is a Hugo site with the following key directories:
 
-- `content/` - Markdown files for site content (currently empty)
-- `layouts/` - HTML templates for rendering content (currently empty, likely using theme layouts)
-- `static/` - Static assets (images, CSS, JS) served directly
-- `themes/` - Hugo themes (currently empty)
-- `data/` - YAML/JSON/TOML data files for site data
-- `assets/` - Assets to be processed by Hugo Pipes
-- `i18n/` - Translation files for internationalization
-- `archetypes/` - Content templates for `hugo new` command
-- `public/` - Generated site output (should be in .gitignore for most workflows)
+- `content/posts/` - Blog posts (42+ posts about Supreme Court reform)
+- `layouts/` - Custom layout overrides (uses PaperMod theme)
+- `static/` - Static assets:
+  - `static/headers/` - Blog header images (1200x630)
+  - `static/thumbnails/` - Instagram images (1080x1080)
+  - `static/logo_circle.png` - Site logo
+- `themes/PaperMod/` - Hugo theme (PaperMod)
+- `venv/` - Python virtual environment for image generation
+- `public/` - Generated site output (gitignored)
 
 ## Configuration
 
 - `hugo.toml` - Main configuration file
-  - Currently configured with placeholder values (baseURL: 'https://example.org/', title: 'My New Hugo Site')
-  - These should be updated for the actual site
+  - Site URL: https://fixthesupremecourt.org
+  - Theme: PaperMod
+  - Taxonomies enabled for tags and categories
 
 ## Development Workflow
 
@@ -47,10 +48,48 @@ This is a standard Hugo site with the following key directories:
 3. Build for production with `hugo` when ready to deploy
 4. The generated site in `public/` directory can be deployed to any static hosting service
 
-## Notes
+## Image Generation
 
-- The site is currently in initial state with empty content and layout directories
-- No theme is currently installed - layouts will need to be created manually or a theme added
-- Hugo version in use: v0.148.2+extended (supports Sass/SCSS processing and other extended features)
-- don't use my twitter handle in front matter
-- the default author for every post will just say "Editor"
+The site uses professional thumbnail and header image generation:
+
+- `generate_thumbnails_pro.py` - Generates both Instagram (1080x1080) and blog header (1200x630) images
+- All images use consistent branding with the site logo
+- Images stored in `static/thumbnails/` and `static/headers/`
+
+### Generate images for a post:
+```bash
+source venv/bin/activate
+python generate_thumbnails_pro.py --post POST-SLUG
+```
+
+## Instagram Posting
+
+Semi-automated Instagram posting workflow:
+
+```bash
+./instagram_post.sh --post POST-SLUG [--open]
+```
+
+This will:
+- Generate Instagram image (1080x1080)
+- Create formatted caption with relevant hashtags
+- Copy caption to clipboard
+- Show you which image to upload
+- Optionally open Instagram in browser
+
+See `INSTAGRAM_POSTING.md` for full documentation.
+
+## Site Information
+
+- **Live site**: https://fixthesupremecourt.org
+- **Theme**: PaperMod
+- **Content**: 42+ blog posts about Supreme Court reform
+- **Hugo version**: v0.148.2+extended
+- **Taxonomies**: Tags and categories enabled
+
+## Content Guidelines
+
+- Don't use twitter handles in front matter
+- Default author for every post: "Editor"
+- Tags should come BEFORE `[cover]` section in TOML front matter
+- All posts should have header images at `/headers/POST-SLUG_modern.png`
