@@ -88,3 +88,13 @@ The detector is fine. But the fire is still burning.
 ---
 
 *The Supreme Court's new conflict-checking software takes effect in mid-March. Parties filing before the Court will be required to list stock ticker symbols in corporate disclosures. Justice Alito and Chief Justice Roberts are the only justices who currently hold individual company stocks, according to financial disclosure reports.*
+
+---
+
+**Sources:**
+
+- [Supreme Court to use software to identify justices' conflict of interests](https://www.washingtonpost.com/politics/2026/02/17/supreme-court-disclosure-ethics-justices/) — *The Washington Post*
+- [Supreme Court implements new rules to help justices spot conflicts of interest](https://www.washingtontimes.com/news/2026/feb/17/supreme-court-implements-new-rules-help-justices-spot-conflicts/) — *The Washington Times*
+- [Supreme Court adopts automated recusal software to avoid ethics conflicts](https://us.cnn.com/2026/02/17/politics/supreme-court-justices-software-recuse-conflicts) — *CNN*
+- [Supreme Court Adopts 'New' Process To Avoid Conflicts Of Interest 20 Years Too Late](https://abovethelaw.com/2026/02/supreme-court-adopts-new-process-to-avoid-conflicts-of-interest-20-years-too-late/) — *Above the Law*
+- [Stocks and Recusals](https://fixthecourt.com/fix/stocks-and-recusals/) — *Fix the Court*
