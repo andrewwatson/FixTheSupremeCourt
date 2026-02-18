@@ -39,7 +39,37 @@ Two justices have not made that choice.
 
 **Justice Samuel Alito** holds stock in more than two dozen individual companies. His individual stock portfolio has generated recusal obligations that account for roughly one-third of all recusals at the Supreme Court. Last month, Alito recused himself from an environmental case involving ConocoPhillips—a company he owned stock in—just four days before oral arguments. He had initially refused to step aside after the company withdrew its petition from the Supreme Court, but recused himself when it became clear the company remained a party in the lower-court proceedings. For a case that had already been fully briefed and scheduled, this last-minute recusal created significant disruption.
 
-**Chief Justice John Roberts** holds shares in two companies.
+**Chief Justice John Roberts** holds shares in two companies—but those two holdings tell a revealing story about why software alone can't solve this problem.
+
+## Roberts' Holdings and Their Consequences
+
+Roberts' 2024 financial disclosure shows he owns between $500,000 and $1 million in **Thermo Fisher Scientific** (ticker: TMO), a life sciences and medical technology conglomerate, and between $100,000 and $250,000 in **Lam Research Corporation** (ticker: LRCX), a semiconductor equipment manufacturer.
+
+These are not obscure small-cap stocks. They are major S&P 500 companies with substantial business interests in areas that regularly generate litigation—patent law, corporate tax policy, regulatory matters, antitrust. And Roberts' history demonstrates exactly how these holdings create problems.
+
+### The Life Technologies Failure
+
+In December 2016, Roberts participated in oral arguments in *Life Technologies Corp. v. Promega Corp.*, a patent dispute over genetic testing technology. The problem: Life Technologies is a subsidiary of Thermo Fisher Scientific, the company in which Roberts holds stock worth hundreds of thousands of dollars. Roberts owned 1,212 shares at the time.
+
+Roberts didn't recuse himself before oral arguments. He didn't recuse himself during oral arguments. He participated fully in the case—asking questions, engaging with attorneys, potentially influencing the direction of the Court's deliberations. Only afterward did someone catch the conflict. Roberts then withdrew from the case.
+
+The Supreme Court Clerk's office acknowledged that "the ordinary conflict check conducted in the chief justice's chambers inadvertently failed to find this potential conflict"—even though the company's corporate disclosure statement in the case filing explicitly identified Life Technologies as "an indirect wholly-owned subsidiary of Thermo Fisher Scientific."
+
+In other words: the information was right there in the filing. The conflict check still failed.
+
+Fix the Court noted this was "the third time in the last 15 months in which a justice missed a stock conflict and failed—at least initially—to recuse himself from a case as required by law."
+
+### Moore v. United States: A Different Kind of Conflict
+
+Roberts' Lam Research holding created a different—and arguably more troubling—type of conflict in *Moore v. United States*, the major corporate tax case the Court decided in 2023.
+
+The case involved a challenge to the 2017 mandatory repatriation tax on deferred corporate foreign earnings. A broad ruling striking down the tax could have affected trillions of dollars in corporate offshore holdings. Analysts calculated that Lam Research stood to receive as much as **$868 million** in tax relief under a broad ruling. Roberts' Thermo Fisher stake was similarly situated: a broad ruling could have delivered **$1.4 billion** in relief to that company.
+
+Roberts participated in the case. He did not recuse.
+
+Unlike the Life Technologies situation, this wasn't a technical oversight—Lam Research and Thermo Fisher weren't parties to the case. Under current judicial ethics rules, recusal is required when a justice owns stock in a party, not merely in a company that would benefit from a ruling. But the financial interest is real: a Supreme Court decision could directly enrich Roberts through his holdings, yet he faces no legal obligation to step aside.
+
+This is the gap the software won't fill. The new ticker-symbol system will catch conflicts where Roberts owns stock in a named party. It won't catch cases where Roberts' holdings give him a direct financial stake in the outcome without the company appearing on the docket.
 
 The new software will help catch cases like the ConocoPhillips situation before they reach the oral argument stage. That's better than catching them after. But it doesn't address why Alito owns stock in dozens of companies with potential business before the Court, or why Roberts holds individual company shares, while the other seven justices have figured out how to structure their finances without creating these problems.
 
@@ -98,3 +128,6 @@ The detector is fine. But the fire is still burning.
 - [Supreme Court adopts automated recusal software to avoid ethics conflicts](https://us.cnn.com/2026/02/17/politics/supreme-court-justices-software-recuse-conflicts) — *CNN*
 - [Supreme Court Adopts 'New' Process To Avoid Conflicts Of Interest 20 Years Too Late](https://abovethelaw.com/2026/02/supreme-court-adopts-new-process-to-avoid-conflicts-of-interest-20-years-too-late/) — *Above the Law*
 - [Stocks and Recusals](https://fixthecourt.com/fix/stocks-and-recusals/) — *Fix the Court*
+- [Chief Justice Roberts Missed Another Stock Conflict](https://fixthecourt.com/2017/01/statement-on-news-of-chief-justice-roberts-missed-recusal/) — *Fix the Court*
+- [Justices John Roberts and Samuel Alito Have a Personal Stake in a Big Corporate Tax Ruling](https://jacobin.com/2023/09/samuel-alito-john-roberts-corporate-tax-breaks-recusal-moore-v-united-states) — *Jacobin*
+- [John Roberts' 2024 Financial Disclosure](https://projects.propublica.org/supreme-connections/justices/john-roberts/2024/) — *ProPublica Supreme Connections*
