@@ -56,7 +56,7 @@ After *Thind*, the government moved to strip his citizenship. [Under California'
 
 On March 16, 1928, Vaishno Das Bagai died by suicide in a San Jose hotel room. He left behind a letter addressed to the San Francisco Examiner that read in part: "I came to America thinking, dreaming and hoping to make this land my home... I am no more British subject. It is not in my power to become a citizen of this country. I am not treated well in California... Is life worth living in a gilded cage? Obstacles this way, blockades that way, and bridges burnt behind."
 
-He was 34 years old. His wife Kala survived him and later remarried, eventually becoming a U.S. citizen under the Luce-Celler Act. She spent the rest of her life speaking about what had been done to her family.
+He was 36 years old. His wife Kala survived him and later remarried, eventually becoming a U.S. citizen under the Luce-Celler Act. She spent the rest of her life speaking about what had been done to her family.
 
 The Supreme Court did not cause Bagai's death with deliberate intent. But the Court's decision created the legal architecture that made his life impossible. Unanimity and good legal form do not absolve an institution of the consequences of its rulings.
 
