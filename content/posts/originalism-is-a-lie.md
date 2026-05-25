@@ -44,7 +44,7 @@ This is originalism in practice: invent a right in 2008 that wasn't there before
 
 ## The Administrative State: Founders Who Built Agencies
 
-Originalists have spent decades arguing that the modern administrative state — agencies like the EPA, the FDA, the FTC — is constitutionally suspect because the Founders never authorized Congress to delegate lawmaking power to executive bureaucracies. This is the intellectual foundation of [*West Virginia v. EPA*](https://www.supremecourt.gov/opinions/21pdf/20-1530_n758.pdf), [*Loper Bright*](https://www.supremecourt.gov/opinions/23pdf/22-451_7m58.pdf), and the broader project of dismantling the regulatory apparatus built over the past century.
+Originalists have spent decades arguing that the modern administrative state — agencies like the EPA, the FDA, the FTC — is constitutionally suspect because the Founders never authorized Congress to delegate lawmaking power to executive bureaucracies. This is the intellectual foundation of [*West Virginia v. EPA*](https://www.supremecourt.gov/opinions/21pdf/20-1530_n758.pdf), [*Loper Bright*](https://www.supremecourt.gov/opinions/23pdf/22-451_7m58.pdf), and [the broader project of dismantling the regulatory apparatus](/posts/chevron-overturned/) built over the past century.
 
 There is a problem with this argument: the Founders built agencies.
 
@@ -68,7 +68,7 @@ The Founders were obsessed with preventing the emergence of a king. They had jus
 
 In [*Trump v. United States*](https://www.supremecourt.gov/opinions/23pdf/23-939_e2pg.pdf) (2024), Chief Justice Roberts's majority invented sweeping presidential immunity from criminal prosecution for "official acts" — a doctrine with no basis in the Constitution's text, no support in two centuries of precedent, and no grounding in anything resembling the Founders' intent. Roberts cited no Founding-era source that supported the immunity he created, because none exists. He constructed it from first principles and called it constitutional law.
 
-This is the doctrine that may ultimately shield a president who attempted to overturn an election from criminal accountability. It was created by the Court's originalist majority. None of them pointed to the original meaning of Article II, because the original meaning does not support them.
+This is [the doctrine that may ultimately shield a president who attempted to overturn an election](/posts/presidential-immunity/) from criminal accountability. It was created by the Court's originalist majority. None of them pointed to the original meaning of Article II, because the original meaning does not support them.
 
 ## The Methodological Problem
 
@@ -82,7 +82,7 @@ And the historical record is always incomplete. We have the convention debates, 
 
 ## Who Invented This, and Why
 
-Originalism was not discovered. It was constructed, in the 1970s and 1980s, as a political response to the Warren Court. The Warren Court had used the Constitution to desegregate schools, protect criminal defendants, guarantee voting rights, and recognize a right to privacy. Conservatives hated these outcomes. They needed a theory that would delegitimize them.
+Originalism was not discovered. It was constructed, in the 1970s and 1980s, as a political response to the Warren Court. The Warren Court had used the Constitution to [desegregate schools, protect criminal defendants, guarantee voting rights](/posts/three-decisions-broke-democracy/), and recognize a right to privacy. Conservatives hated these outcomes. They needed a theory that would delegitimize them.
 
 Originalism was that theory. If the original meaning controls, then [*Brown v. Board of Education*](https://supreme.justia.com/cases/federal/us/347/483/) becomes questionable (the Congress that passed the 14th Amendment also maintained segregated schools in Washington, D.C.). If original meaning controls, then [*Griswold*](https://supreme.justia.com/cases/federal/us/381/479/) and [*Roe*](https://supreme.justia.com/cases/federal/us/410/113/) have no constitutional basis. If original meaning controls, then the New Deal administrative state is constitutionally suspect.
 
