@@ -19,3 +19,7 @@ pagerSize = 20
 [taxonomies]
 tag = "tags"
 category = "categories"
+
+[services]
+  [services.googleAnalytics]
+    ID = 'G-PC4PW2JNP5'
