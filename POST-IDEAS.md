@@ -22,10 +22,7 @@ Generated 2026-05-25. Cross-checked against existing 52 posts — no overlaps.
 
 ## 🧠 Analytical / Deeper Cuts
 
-5. **"Originalism Is a Lie: How the Conservative Court Picks and Chooses History"**
-   — Side-by-side examples where the same justices apply vs. ignore originalism based on preferred outcomes. The intellectual takedown readers want.
-
-6. **"The Major Questions Doctrine: The Court Invented New Law to Gut the Administrative State"**
+5. **"The Major Questions Doctrine: The Court Invented New Law to Gut the Administrative State"** **"The Major Questions Doctrine: The Court Invented New Law to Gut the Administrative State"**
    — How SCOTUS created a doctrine out of thin air (*West Virginia v. EPA*, then weaponized further by *Loper Bright*) to strip agencies of power. Extends the existing Chevron post.
 
 7. **"The Court vs. the Climate: A Decade of Decisions That Made the Planet Hotter"**
