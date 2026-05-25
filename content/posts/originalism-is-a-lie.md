@@ -124,6 +124,3 @@ Right now, that language is originalism. The history that matters, it turns out,
 - [Original Meanings: Politics and Ideas in the Making of the Constitution](https://www.penguinrandomhouse.com/books/137447/original-meanings-by-jack-n-rakove/) — Jack N. Rakove, Pulitzer Prize-winning history of the constitutional founding
 - [The Originalism Debate: A Guide for the Perplexed](https://kb.osu.edu/bitstream/handle/1811/64447/OSLJ_V49N4_1085.pdf) — Daniel A. Farber, *Ohio State Law Journal*, Vol. 49 (1988)
 - [Meese's 1985 Speech to the American Bar Association](https://teachingamericanhistory.org/document/speech-to-the-american-bar-association/) — the founding text of modern originalism as political project
-- [How the Supreme Court Gutted the Administrative State](/posts/chevron-overturned/) — *Fix the Supreme Court*
-- [Three Decisions That Broke American Democracy](/posts/three-decisions-broke-democracy/) — *Fix the Supreme Court*
-- [The President Is Now a King](/posts/presidential-immunity/) — *Fix the Supreme Court*
