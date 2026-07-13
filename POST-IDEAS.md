@@ -41,9 +41,6 @@ Generated 2026-05-25. Cross-checked against existing 52 posts — no overlaps.
 10. **"Harlan Crow: The Billionaire Who Bought a Supreme Court Justice"**
     — Deep dive on the donor behind Clarence Thomas — his properties, his yacht, his private school payments. Distinct from the existing Thomas post which covers the broad scandal.
 
-11. **"Ginni Thomas: The January 6th Activist Whose Husband Refused to Recuse"**
-    — Her texts to Mark Meadows, her pressure on state legislators, and Clarence Thomas's ongoing refusal to step aside from related cases.
-
 ---
 
 ## 📊 Data / Polling Posts
