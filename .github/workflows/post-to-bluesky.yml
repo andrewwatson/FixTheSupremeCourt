@@ -26,6 +26,6 @@ jobs:
         env:
           BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
           BLUESKY_PASSWORD: ${{ secrets.BLUESKY_PASSWORD }}
-          SITE_URL: 'https://fixthesupremecourt.com'
+          SITE_URL: 'https://fixthesupremecourt.org'
         run: |
           python scripts/post_to_bluesky.py
