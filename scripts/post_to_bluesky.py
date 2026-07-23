@@ -122,6 +122,11 @@ def get_recent_posts(hours=24):
             # Parse ISO 8601 date
             post_date = datetime.fromisoformat(date_str.replace('Z', '+00:00'))
 
+            # Dates without a time/offset (e.g. "2026-02-19") parse as naive;
+            # treat them as UTC so they can be compared to aware datetimes below.
+            if post_date.tzinfo is None:
+                post_date = post_date.replace(tzinfo=timezone.utc)
+
             # Check if post is recent
             if post_date >= cutoff_time and post_date <= datetime.now(timezone.utc):
                 title = front_matter.get('title', post_file.stem)
