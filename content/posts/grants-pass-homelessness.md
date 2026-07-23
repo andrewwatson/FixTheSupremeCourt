@@ -44,7 +44,7 @@ She called the ruling "unconscionable," writing that it leaves people "with an i
 
 The effects were immediate and national in scope:
 
-- **San Francisco** moved swiftly to [resume and expand encampment sweeps](https://sfist.com/2024/07/08/ninth-circuit-clears-way-for-san-francisco-to-resume-encampment-sweeps/) within days of the ruling, after the Ninth Circuit lifted the injunction that had constrained it.
+- **San Francisco** [gained the legal ability to resume encampment sweeps](https://sfist.com/2024/07/08/ninth-circuit-clears-way-for-san-francisco-to-resume-encampment-sweeps/) after the Ninth Circuit lifted its injunction on July 8, 2024, with the City Attorney calling it added flexibility.
 - **California Governor Gavin Newsom** [issued an executive order](https://www.gov.ca.gov/2024/07/25/governor-newsom-orders-state-agencies-to-address-encampments-in-their-communities-with-urgency-and-dignity/) directing state agencies to clear homeless encampments on state land, citing the ruling directly — with [CalMatters reporting](https://calmatters.org/housing/homelessness/2024/07/newsom-homeless-encampments-order/) it came less than a month after the decision came down.
 - Cities across the country — not just in the Ninth Circuit — began passing or reviving camping bans, using *Grants Pass* as legal cover regardless of local shelter capacity; the [National Homelessness Law Center's tracking](https://homelesslaw.org/grants-pass/) documents the scope of that wave.
 
