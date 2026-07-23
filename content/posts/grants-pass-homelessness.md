@@ -44,14 +44,13 @@ She called the ruling "unconscionable," writing that it leaves people "with an i
 
 The effects were immediate and national in scope:
 
-- **San Francisco, California** moved swiftly to expand encampment sweeps within weeks of the ruling.
-- **California Governor Gavin Newsom** issued an executive order directing state agencies to clear homeless encampments on state land, citing the decision directly.
-- Cities across the country — not just in the Ninth Circuit — began passing or reviving camping bans, using *Grants Pass* as legal cover regardless of local shelter capacity.
-- Homelessness advocacy organizations reported a wave of new anti-camping ordinances introduced in city councils within the ruling's first year, many modeled closely on the Grants Pass ordinances the Court upheld.
+- **San Francisco** moved swiftly to [resume and expand encampment sweeps](https://sfist.com/2024/07/08/ninth-circuit-clears-way-for-san-francisco-to-resume-encampment-sweeps/) within days of the ruling, after the Ninth Circuit lifted the injunction that had constrained it.
+- **California Governor Gavin Newsom** [issued an executive order](https://www.gov.ca.gov/2024/07/25/governor-newsom-orders-state-agencies-to-address-encampments-in-their-communities-with-urgency-and-dignity/) directing state agencies to clear homeless encampments on state land, citing the ruling directly — with [CalMatters reporting](https://calmatters.org/housing/homelessness/2024/07/newsom-homeless-encampments-order/) it came less than a month after the decision came down.
+- Cities across the country — not just in the Ninth Circuit — began passing or reviving camping bans, using *Grants Pass* as legal cover regardless of local shelter capacity; the [National Homelessness Law Center's tracking](https://homelesslaw.org/grants-pass/) documents the scope of that wave.
 
 None of this made more shelter beds appear. It just made it legal to punish people for the absence of them.
 
-## The Ninth Amendment Problem Nobody Talks About
+## The Eighth Amendment Problem Nobody Talks About
 
 There's a pattern worth naming here, because it recurs across [this Court's approach to structural inequality](/posts/three-decisions-broke-democracy/): the majority frames the case as a narrow, technical question of doctrine — is this a status or conduct? — while the dissent insists on looking at the practical reality the doctrine is supposed to govern. Grants Pass's own city council president had said publicly that the goal of the ordinances was to make homeless people uncomfortable enough to leave town. The city wasn't pretending its ordinances were content-neutral regulations of camping equipment. It was punishing a status and using conduct-based language to do it.
 
@@ -71,6 +70,6 @@ Cities still have every incentive to build shelter capacity, house people, and a
 
 - [*City of Grants Pass v. Johnson*, No. 23-175 (June 28, 2024)](https://www.supremecourt.gov/opinions/23pdf/23-175_19m2.pdf) — majority opinion (Gorsuch) and Sotomayor dissent
 - [SCOTUSblog: "Supreme Court rules cities can enforce bans on homeless people sleeping outside"](https://www.scotusblog.com/2024/06/supreme-court-rules-cities-can-enforce-bans-on-homeless-people-sleeping-outside/)
-- [NPR: "The Supreme Court sides with a city that bans homeless people from sleeping outside"](https://www.npr.org/2024/06/28/nx-s1-5013631/supreme-court-grants-pass-homeless-camping-ban)
+- [NPR: "The Supreme Court says cities can punish people for sleeping in public places"](https://www.npr.org/2024/06/28/nx-s1-5022843/supreme-court-says-cities-can-punish-people-for-sleeping-outside)
 - [National Homelessness Law Center: analysis and post-ruling tracking of local ordinances](https://homelesslaw.org/grants-pass/)
-- [California Governor's Office: executive order on encampment removal following Grants Pass](https://www.gov.ca.gov/2024/07/25/governor-newsom-issues-executive-order-to-remove-encampments/)
+- [California Governor's Office: executive order on encampment removal following Grants Pass](https://www.gov.ca.gov/2024/07/25/governor-newsom-orders-state-agencies-to-address-encampments-in-their-communities-with-urgency-and-dignity/)
