@@ -14,7 +14,7 @@ import requests
 # Bluesky API credentials from environment variables
 BLUESKY_HANDLE = os.getenv('BLUESKY_HANDLE')
 BLUESKY_PASSWORD = os.getenv('BLUESKY_PASSWORD')
-SITE_URL = os.getenv('SITE_URL', 'https://fixthesupremecourt.com')
+SITE_URL = os.getenv('SITE_URL', 'https://fixthesupremecourt.org')
 
 class BlueskyPoster:
     def __init__(self, handle, password):
