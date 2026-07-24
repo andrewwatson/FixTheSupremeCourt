@@ -90,7 +90,7 @@ Nobody had to repeal the Voting Rights Act for this to happen. The statute is st
 
 ### Sources
 
-- [*Louisiana v. Callais*, No. 24-109 (consolidated with No. 24-110, *Robinson v. Callais*), decided April 29, 2026](https://www.supremecourt.gov/opinions/25pdf/24-109_new_o7jp.pdf) — majority opinion (Alito), Thomas concurrence (joined by Gorsuch), Kagan dissent (joined by Sotomayor, Jackson). Below: three-judge panel in *Callais v. Landry*, 732 F. Supp. 3d 574 (W.D. La.), had held SB8 unconstitutional — the judgment the Supreme Court affirmed.
+- [*Louisiana v. Callais*, No. 24-109 (consolidated with No. 24-110, *Robinson v. Callais*), decided April 29, 2026](https://www.supremecourt.gov/opinions/25pdf/24-109_21o3.pdf) — majority opinion (Alito), Thomas concurrence (joined by Gorsuch), Kagan dissent (joined by Sotomayor, Jackson). Below: three-judge panel in *Callais v. Landry*, 732 F. Supp. 3d 574 (W.D. La.), had held SB8 unconstitutional — the judgment the Supreme Court affirmed.
 - [*Allen v. Caster*, No. 25-243 (consolidated with Nos. 25-273, 25-274), decided May 11, 2026](https://www.supremecourt.gov/opinions/25pdf/25-243_f20h.pdf) — unsigned order, Sotomayor dissent (joined by Kagan, Jackson)
 - [SCOTUSblog case page](https://www.scotusblog.com/cases/louisiana-v-callais-2/)
 - [Wikipedia: Louisiana v. Callais](https://en.wikipedia.org/wiki/Louisiana_v._Callais)
