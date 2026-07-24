@@ -1,6 +1,6 @@
 +++
 title = "Louisiana v. Callais: How the Supreme Court Quietly Gutted the Voting Rights Act"
-date = '2026-07-24T09:00:00-04:00'
+date = '2026-07-23T20:36:00-04:00'
 draft = false
 author = 'Editor'
 description = "In Louisiana v. Callais, the Supreme Court redefined what Section 2 of the Voting Rights Act requires, making it dramatically harder for minority voters to challenge racial gerrymanders. Kagan's dissent says the ruling leaves Section 2 'all but a dead letter.'"
