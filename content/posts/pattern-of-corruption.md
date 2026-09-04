@@ -261,3 +261,5 @@ One option preserves judicial independence while ensuring accountability. The ot
 We need a binding ethics code. We needed it decades ago. And every day without one is another day the Supreme Court proves it cannot be trusted to police itself.
 
 The pattern of corruption is clear. The solution is available. All that's missing is the political will to act.
+
+For each justice's complete, sourced record, see the [Clarence Thomas](/justices/clarence-thomas/) and [Samuel Alito](/justices/samuel-alito/) profiles — part of an ongoing series covering each sitting justice's ethics and recusal history.

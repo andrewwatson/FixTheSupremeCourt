@@ -115,3 +115,5 @@ Clarence Thomas's conduct demonstrates what happens when the most powerful court
 This isn't just about one justice's ethical failures. It's about a broken system that allows those failures to continue unchecked.
 
 When Supreme Court justices are literally above the law they're supposed to interpret, reform isn't optional—it's essential.
+
+For the complete, continuously updated record — gifts, recusals, and accountability all in one place — see [Thomas's full justice profile](/justices/clarence-thomas/).

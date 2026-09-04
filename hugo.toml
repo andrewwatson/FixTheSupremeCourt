@@ -24,6 +24,11 @@ name = "Term Limits & Court Packing"
 url = "/term-limits-and-court-packing/"
 weight = 10
 
+[[menu.main]]
+name = "The Justices"
+url = "/justices/"
+weight = 20
+
 [taxonomies]
 tag = "tags"
 category = "categories"

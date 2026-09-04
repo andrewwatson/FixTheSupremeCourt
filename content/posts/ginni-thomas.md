@@ -168,6 +168,8 @@ This is not a marriage boundary problem. It is a systemic corruption problem. Th
 
 That is why reform is not an ideological question. It is a structural necessity. The court cannot police itself. Congress must act. And the American public deserves a judiciary that is actually, verifiably, independent.
 
+For Clarence Thomas's complete ethics and recusal record in one place, see [his full justice profile](/justices/clarence-thomas/).
+
 ---
 
 ### Sources

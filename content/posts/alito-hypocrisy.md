@@ -146,3 +146,5 @@ He accepts gifts from billionaires with cases before him. He flies insurrection 
 This is what an accountability-free Supreme Court looks like. This is why reform isn't optional—it's essential.
 
 Because when Supreme Court justices are literally and figuratively above the law, democracy itself is in danger.
+
+For Alito's complete, sourced record — including his recusal history, which is more complicated than it first appears — see [his full justice profile](/justices/samuel-alito/).
