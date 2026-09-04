@@ -8,6 +8,9 @@ mainSections = ['posts', 'featured']
 defaultTheme = 'light'
 summaryLength = 500
 
+[params.author]
+name = "Editor"
+
 [params.label]
 text = ""
 icon = "logo_circle.png"
