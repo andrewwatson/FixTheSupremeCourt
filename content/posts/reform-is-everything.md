@@ -110,4 +110,6 @@ Want to restore reproductive freedom? You need Court reform first.
 
 The question isn't whether Court reform is important. It's whether the political will exists to do what's necessary. And building that will—among elected officials, opinion leaders, and the broader public—is the most important political work happening right now.
 
+For where the two leading structural reforms actually stand — the bills, the constitutional questions, the polling — see [our complete guide to term limits and court packing](/term-limits-and-court-packing/).
+
 Because without breaking the corrupt rule of the six, everything else is just wishful thinking.

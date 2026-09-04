@@ -192,7 +192,7 @@ Rotating panels aren't the only proposed reform. How do they compare?
 
 **Court expansion** (adding more justices) could rebalance the Court in the short term but invites tit-for-tat escalation where each party adds justices when in power.
 
-**Rotating panels** make the Court's composition less dependent on which party controls government at any given moment.
+**Rotating panels** make the Court's composition less dependent on which party controls government at any given moment. (See [our complete guide to term limits and court packing](/term-limits-and-court-packing/) for the current bills and polling on both alternatives.)
 
 ### vs. Jurisdiction Stripping
 

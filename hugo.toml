@@ -19,6 +19,11 @@ iconHeight = 60
 [pagination]
 pagerSize = 20
 
+[[menu.main]]
+name = "Term Limits & Court Packing"
+url = "/term-limits-and-court-packing/"
+weight = 10
+
 [taxonomies]
 tag = "tags"
 category = "categories"

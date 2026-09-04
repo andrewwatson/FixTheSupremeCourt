@@ -252,7 +252,7 @@ Expansion is more comprehensive but harder politically. Stripping is narrower bu
 
 **Term limits** address how long justices serve. **Jurisdiction stripping** addresses what they can rule on.
 
-Term limits require constitutional amendment (probably). Stripping requires only legislation.
+Term limits require constitutional amendment (probably). Stripping requires only legislation. (See [our complete guide to term limits and court packing](/term-limits-and-court-packing/) for the current bills and the actual constitutional analysis on both.)
 
 ### vs. Binding Ethics Code
 

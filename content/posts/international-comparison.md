@@ -181,3 +181,5 @@ The Supreme Court doesn't need to be above the law to be independent. In fact, t
 If Germany, Canada, Australia, the UK, and dozens of other democracies can have respected high courts with term limits and enforceable ethics rules, so can we.
 
 The question isn't whether reform is possible. The question is why we're the only democracy that hasn't already done it.
+
+For how a U.S. term-limits proposal would actually work, the current bills in Congress, and how it compares to court expansion, see [our complete guide to term limits and court packing](/term-limits-and-court-packing/).

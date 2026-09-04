@@ -193,6 +193,8 @@ That's not principle. That's power.
 
 And it's exactly why Supreme Court reform—including expansion—isn't just constitutional. It's necessary.
 
+For the current federal expansion bill, the constitutional basis, and how it compares to term limits, see [our complete guide to term limits and court packing](/term-limits-and-court-packing/).
+
 ---
 
 *Utah's court expansion is the first state supreme court expansion since Arizona in 2016. The number of U.S. Supreme Court justices has changed six times in American history.*

@@ -27,3 +27,5 @@ Supreme Court reform isn't a new idea invented by frustrated progressives. It's 
 The difference today: the current Court is more extreme, more partisan, more corrupt, and more captured by special interests than any Court in modern history.
 
 Reform proposals that were once theoretical are now urgent necessities. The choice is reform or democratic collapse.
+
+For where those 2020s proposals stand today — the actual bills in Congress, the constitutional questions, and current polling — see [our complete guide to term limits and court packing](/term-limits-and-court-packing/).

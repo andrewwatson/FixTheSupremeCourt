@@ -124,7 +124,7 @@ Breaking this cycle requires attacking all five problems simultaneously.
 
 ## The Comprehensive Reform Package
 
-To actually fix the Supreme Court, we need coordinated reforms across five dimensions:
+To actually fix the Supreme Court, we need coordinated reforms across five dimensions. (For a deep dive on the two most-discussed pieces — including the actual bills currently in Congress — see [our complete guide to term limits and court packing](/term-limits-and-court-packing/).)
 
 ### 1. Immediate Rebalancing: Court Expansion
 

@@ -37,4 +37,6 @@ The idea that nine is somehow sacred is a modern myth. What's actually radical i
 
 Other democracies regularly reform their high courts. Germany restructured its Constitutional Court after World War II. The United Kingdom replaced the House of Lords' judicial function with a new Supreme Court in 2009. Canada's Supreme Court operates with mandatory retirement ages. The idea that America's system is perfect and unchangeable is American exceptionalism at its worst.
 
+For the current bills in Congress, the constitutional questions, and how expansion compares to term limits, see [our complete guide to term limits and court packing](/term-limits-and-court-packing/).
+
 
