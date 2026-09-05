@@ -8,8 +8,6 @@
 
   <header class="post-header {{ if $hasCover }}has-cover{{ end }}">
     {{ partial "breadcrumbs.html" . }}
-    {{- if not $hasCover }}
-    {{/* Only show title if there's no cover image (title is in the image) */}}
     <h1 class="post-title entry-hint-parent">
       {{ .Title }}
       {{- if .Draft }}
@@ -21,7 +19,6 @@
       </span>
       {{- end }}
     </h1>
-    {{- end }}
     {{- if .Description }}
     <div class="post-description">
       {{ .Description }}
