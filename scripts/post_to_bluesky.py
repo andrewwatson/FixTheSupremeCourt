@@ -1,20 +1,32 @@
 #!/usr/bin/env python3
 """
-Post new Hugo blog posts to Bluesky automatically.
-Reads posts from content/posts/ and posts those published in the last 24 hours.
+Post one new page to Bluesky per run, oldest-unposted-first.
+
+Scans content/posts/*.md (this covers every content type in this repo,
+including the guide and justice-profile types, which live in that same
+directory despite overriding their front-matter `url`). Posts are tracked
+in data/bluesky-posted.json so each page goes out exactly once, in order
+of front-matter `date`, regardless of publish bursts or run cadence.
 """
 
+import json
 import os
 import sys
-from datetime import datetime, timedelta, timezone
+import tomllib
+from datetime import datetime, timezone
 from pathlib import Path
-import re
+
 import requests
 
-# Bluesky API credentials from environment variables
 BLUESKY_HANDLE = os.getenv('BLUESKY_HANDLE')
 BLUESKY_PASSWORD = os.getenv('BLUESKY_PASSWORD')
-SITE_URL = os.getenv('SITE_URL', 'https://fixthesupremecourt.org')
+SITE_URL = os.getenv('SITE_URL', 'https://fixthesupremecourt.org').rstrip('/')
+
+POSTS_DIR = Path('content/posts')
+STATE_FILE = Path('data/bluesky-posted.json')
+
+BLUESKY_MAX_CHARS = 300
+
 
 class BlueskyPoster:
     def __init__(self, handle, password):
@@ -24,181 +36,232 @@ class BlueskyPoster:
         self.api_base = "https://bsky.social/xrpc"
 
     def login(self):
-        """Authenticate with Bluesky and get session token."""
         response = requests.post(
             f"{self.api_base}/com.atproto.server.createSession",
-            json={
-                "identifier": self.handle,
-                "password": self.password
-            }
+            json={"identifier": self.handle, "password": self.password},
         )
         response.raise_for_status()
         self.session = response.json()
         return self.session
 
-    def create_post(self, text, url=None):
-        """Create a post on Bluesky."""
+    def create_post(self, text, url):
         if not self.session:
             raise Exception("Not logged in. Call login() first.")
 
-        # Build the post record
         record = {
             "$type": "app.bsky.feed.post",
             "text": text,
-            "createdAt": datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z')
+            "createdAt": datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z'),
         }
 
-        # Add URL as a facet if provided
-        if url:
-            # Find URL position in text
-            url_start = text.find(url)
-            if url_start != -1:
-                record["facets"] = [{
-                    "index": {
-                        "byteStart": url_start,
-                        "byteEnd": url_start + len(url)
-                    },
-                    "features": [{
-                        "$type": "app.bsky.richtext.facet#link",
-                        "uri": url
-                    }]
-                }]
+        url_start = text.find(url)
+        if url_start != -1:
+            # Bluesky facets are byte-indexed, not character-indexed.
+            byte_start = len(text[:url_start].encode('utf-8'))
+            byte_end = byte_start + len(url.encode('utf-8'))
+            record["facets"] = [{
+                "index": {"byteStart": byte_start, "byteEnd": byte_end},
+                "features": [{
+                    "$type": "app.bsky.richtext.facet#link",
+                    "uri": url,
+                }],
+            }]
 
         response = requests.post(
             f"{self.api_base}/com.atproto.repo.createRecord",
-            headers={
-                "Authorization": f"Bearer {self.session['accessJwt']}"
-            },
+            headers={"Authorization": f"Bearer {self.session['accessJwt']}"},
             json={
                 "repo": self.session["did"],
                 "collection": "app.bsky.feed.post",
-                "record": record
-            }
+                "record": record,
+            },
         )
         response.raise_for_status()
         return response.json()
 
+
 def parse_front_matter(content):
-    """Parse Hugo front matter from markdown file."""
-    # Match TOML front matter between +++
-    match = re.match(r'\+\+\+\n(.*?)\n\+\+\+', content, re.DOTALL)
-    if not match:
+    """Parse Hugo TOML front matter (+++ ... +++) with tomllib."""
+    if not content.startswith('+++'):
+        return {}
+    end = content.find('\n+++', 3)
+    if end == -1:
+        return {}
+    toml_block = content[3:end].strip('\n')
+    try:
+        return tomllib.loads(toml_block)
+    except tomllib.TOMLDecodeError as e:
+        print(f"  ! TOML parse error: {e}")
         return {}
 
-    front_matter = {}
-    for line in match.group(1).split('\n'):
-        if '=' in line:
-            key, value = line.split('=', 1)
-            key = key.strip()
-            value = value.strip().strip("'\"")
-            front_matter[key] = value
 
-    return front_matter
+def load_posted_state():
+    if not STATE_FILE.exists():
+        return {}
+    return json.loads(STATE_FILE.read_text())
 
-def get_recent_posts(hours=24):
-    """Get posts published in the last N hours."""
-    posts_dir = Path('content/posts')
-    if not posts_dir.exists():
-        print(f"Posts directory not found: {posts_dir}")
+
+def save_posted_state(state):
+    STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    STATE_FILE.write_text(json.dumps(state, indent=2, sort_keys=True) + '\n')
+
+
+def get_page_url(front_matter, slug, site_url):
+    """Respect a front-matter `url` override; fall back to /posts/<slug>/."""
+    override = front_matter.get('url')
+    if override:
+        path = override if override.startswith('/') else f'/{override}'
+        if not path.endswith('/'):
+            path += '/'
+        return f"{site_url}{path}"
+    return f"{site_url}/posts/{slug}/"
+
+
+def collect_candidates():
+    """All non-draft pages with a parseable date, sorted oldest-first."""
+    if not POSTS_DIR.exists():
+        print(f"Posts directory not found: {POSTS_DIR}")
         return []
 
-    cutoff_time = datetime.now(timezone.utc) - timedelta(hours=hours)
-    recent_posts = []
+    now = datetime.now(timezone.utc)
+    candidates = []
 
-    for post_file in posts_dir.glob('*.md'):
+    for post_file in sorted(POSTS_DIR.glob('*.md')):
         content = post_file.read_text()
         front_matter = parse_front_matter(content)
 
-        # Skip drafts
-        if front_matter.get('draft', 'false').lower() == 'true':
+        if not front_matter:
+            continue
+        if front_matter.get('draft') is True:
             continue
 
-        # Parse date
-        date_str = front_matter.get('date', '')
-        if not date_str:
+        date_val = front_matter.get('date')
+        if date_val is None:
             continue
 
-        try:
-            # Parse ISO 8601 date
-            post_date = datetime.fromisoformat(date_str.replace('Z', '+00:00'))
-
-            # Dates without a time/offset (e.g. "2026-02-19") parse as naive;
-            # treat them as UTC so they can be compared to aware datetimes below.
-            if post_date.tzinfo is None:
-                post_date = post_date.replace(tzinfo=timezone.utc)
-
-            # Check if post is recent
-            if post_date >= cutoff_time and post_date <= datetime.now(timezone.utc):
-                title = front_matter.get('title', post_file.stem)
-                slug = post_file.stem
-
-                recent_posts.append({
-                    'title': title,
-                    'slug': slug,
-                    'date': post_date,
-                    'file': post_file.name
-                })
-        except ValueError as e:
-            print(f"Error parsing date in {post_file.name}: {e}")
+        # Hugo front matter quotes dates (e.g. '2026-09-04T09:00:00-04:00'),
+        # which TOML parses as a plain string rather than a datetime. Bare,
+        # unquoted RFC3339 dates parse as real datetime/date objects instead.
+        if isinstance(date_val, str):
+            try:
+                post_date = datetime.fromisoformat(date_val)
+            except ValueError:
+                print(f"  ! Unparseable date in {post_file.name}: {date_val!r}")
+                continue
+        elif isinstance(date_val, datetime):
+            post_date = date_val
+        elif hasattr(date_val, 'year'):  # date, not datetime
+            post_date = datetime(date_val.year, date_val.month, date_val.day)
+        else:
             continue
 
-    return sorted(recent_posts, key=lambda x: x['date'])
+        if post_date.tzinfo is None:
+            post_date = post_date.replace(tzinfo=timezone.utc)
 
-def create_post_text(post, site_url):
-    """Create the text for a Bluesky post."""
-    url = f"{site_url}/posts/{post['slug']}/"
+        if post_date > now:
+            continue  # future-dated / scheduled content
 
-    # Bluesky has a 300 character limit
-    # Format: Title + newline + URL
-    text = f"{post['title']}\n\n{url}"
+        slug = post_file.stem
+        candidates.append({
+            'slug': slug,
+            'file': post_file.name,
+            'title': front_matter.get('title', slug),
+            'description': front_matter.get('description', ''),
+            'date': post_date,
+            'url': get_page_url(front_matter, slug, SITE_URL),
+        })
 
-    if len(text) > 300:
-        # Truncate title if needed
-        max_title_length = 300 - len(url) - 3  # 3 for "\n\n"
-        title = post['title'][:max_title_length - 3] + "..."
+    return sorted(candidates, key=lambda p: p['date'])
+
+
+def create_post_text(page):
+    """Title + description + link, truncated to fit Bluesky's limit.
+
+    Truncates the description (rather than dropping it outright) when the
+    full text overflows, since most front-matter descriptions are written
+    long for SEO and even a partial one beats none. Falls back to
+    truncating the title only if there's no room for a description at all.
+    """
+    url = page['url']
+    title = page['title']
+    description = page['description']
+
+    if not description:
         text = f"{title}\n\n{url}"
+        if len(text) <= BLUESKY_MAX_CHARS:
+            return text, url
+        return _truncate_title_only(title, url), url
 
-    return text, url
+    text = f"{title}\n\n{description}\n\n{url}"
+    if len(text) <= BLUESKY_MAX_CHARS:
+        return text, url
+
+    # Over budget: shrink the description to fit, keeping title intact.
+    fixed_len = len(title) + len("\n\n") + len("\n\n") + len(url) + len("...")
+    max_desc_len = BLUESKY_MAX_CHARS - fixed_len
+    if max_desc_len >= 20:  # only bother if a meaningful snippet still fits
+        description = description[:max_desc_len].rsplit(' ', 1)[0] + "..."
+        text = f"{title}\n\n{description}\n\n{url}"
+        return text, url
+
+    # No room for any description alongside this title; drop it.
+    text = f"{title}\n\n{url}"
+    if len(text) <= BLUESKY_MAX_CHARS:
+        return text, url
+    return _truncate_title_only(title, url), url
+
+
+def _truncate_title_only(title, url):
+    fixed_len = len("\n\n") + len(url) + len("...")
+    max_title_len = BLUESKY_MAX_CHARS - fixed_len
+    return f"{title[:max_title_len]}...\n\n{url}"
+
 
 def main():
     if not BLUESKY_HANDLE or not BLUESKY_PASSWORD:
         print("Error: BLUESKY_HANDLE and BLUESKY_PASSWORD environment variables must be set")
         sys.exit(1)
 
-    # Get recent posts
-    print("Checking for recent posts...")
-    recent_posts = get_recent_posts(hours=24)
+    state = load_posted_state()
+    candidates = collect_candidates()
+    unposted = [p for p in candidates if p['slug'] not in state]
 
-    if not recent_posts:
-        print("No recent posts found to share.")
+    print(f"{len(candidates)} total page(s), {len(unposted)} not yet posted.")
+
+    if not unposted:
+        print("Nothing new to post.")
         return
 
-    print(f"Found {len(recent_posts)} recent post(s):")
-    for post in recent_posts:
-        print(f"  - {post['title']} ({post['file']})")
+    page = unposted[0]
+    text, url = create_post_text(page)
 
-    # Login to Bluesky
-    print("\nLogging in to Bluesky...")
+    print(f"Posting: {page['title']}")
+    print(f"URL: {url}")
+    print(f"Text:\n{text}")
+
     poster = BlueskyPoster(BLUESKY_HANDLE, BLUESKY_PASSWORD)
     try:
         poster.login()
-        print("✓ Logged in successfully")
     except Exception as e:
-        print(f"✗ Login failed: {e}")
+        print(f"Login failed: {e}")
         sys.exit(1)
 
-    # Post each recent post
-    for post in recent_posts:
-        try:
-            text, url = create_post_text(post, SITE_URL)
-            print(f"\nPosting: {post['title']}")
-            print(f"Text: {text}")
+    try:
+        result = poster.create_post(text, url)
+    except Exception as e:
+        print(f"Failed to post '{page['title']}': {e}")
+        sys.exit(1)
 
-            result = poster.create_post(text, url)
-            print(f"✓ Posted successfully: {result.get('uri', 'unknown URI')}")
-        except Exception as e:
-            print(f"✗ Failed to post '{post['title']}': {e}")
-            continue
+    print(f"Posted successfully: {result.get('uri', 'unknown URI')}")
+
+    state[page['slug']] = {
+        'title': page['title'],
+        'url': url,
+        'posted_at': datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z'),
+        'uri': result.get('uri'),
+    }
+    save_posted_state(state)
+
 
 if __name__ == '__main__':
     main()
