@@ -1,0 +1,22 @@
+{{- $gaID := site.Config.Services.GoogleAnalytics.ID -}}
+{{- if $gaID }}
+<script>
+  (function () {
+    if (new URLSearchParams(window.location.search).get('ga_optout') === '1') {
+      localStorage.setItem('ga-opt-out', 'true');
+    }
+  })();
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ $gaID }}"></script>
+<script>
+  var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+  var doNotTrack = (dnt == "1" || dnt == "yes");
+  var optedOut = (localStorage.getItem('ga-opt-out') === 'true');
+  if (!doNotTrack && !optedOut) {
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', '{{ $gaID }}');
+  }
+</script>
+{{- end }}
