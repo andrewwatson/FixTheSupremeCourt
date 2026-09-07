@@ -1,5 +1,5 @@
 +++
-title = "Supreme Court Term Limits and Court Packing: The Complete Guide"
+title = "Supreme Court Term Limits and Court Packing"
 date = '2026-09-04T09:00:00-04:00'
 lastmod = '2026-09-04T09:00:00-04:00'
 draft = false
@@ -9,7 +9,7 @@ url = '/term-limits-and-court-packing/'
 weight = 1
 ShowToc = true
 TocOpen = false
-description = "Everything you need to know about Supreme Court term limits and court expansion (\"court packing\"): what each proposal actually does, the current bills in Congress, whether they're constitutional, what the polling shows, and how they compare."
+description = "Supreme Court term limits and court packing explained: what each proposal does, the current bills in Congress, constitutionality, and what the polling shows."
 
 tags = ["term limits", "court expansion", "court packing", "reform", "court-reform"]
 

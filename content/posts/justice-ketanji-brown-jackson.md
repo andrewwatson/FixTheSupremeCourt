@@ -1,5 +1,5 @@
 +++
-title = "Justice Ketanji Brown Jackson: Ethics, Recusals, and the Case for Reform"
+title = "Ketanji Brown Jackson: Ethics & Recusals"
 date = '2026-09-04T09:00:00-04:00'
 lastmod = '2026-09-04T09:00:00-04:00'
 draft = false
@@ -9,7 +9,7 @@ url = '/justices/ketanji-brown-jackson/'
 weight = 1
 ShowToc = true
 TocOpen = false
-description = "Ketanji Brown Jackson's ethics and recusal record: nearly $3 million in book advances, a conservative ethics complaint over her husband's disclosed income, and a Harvard recusal pledge she kept for one case but not its consolidated companion."
+description = "Ketanji Brown Jackson's ethics record: nearly $3 million in book advances, a complaint over her husband's income, and an inconsistent Harvard recusal pledge."
 
 tags = ["ketanji brown jackson", "ethics", "recusal", "corruption", "supreme-court", "court-reform"]
 

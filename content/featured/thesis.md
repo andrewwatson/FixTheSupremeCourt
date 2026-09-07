@@ -11,7 +11,7 @@ alt = "A Stolen Court: How the Supreme Court Lost Its Legitimacy and Why Reform 
 
 +++
 
-# A Stolen Court: How the Supreme Court Lost Its Legitimacy and Why Reform Is Overdue
+## A Stolen Court: How the Supreme Court Lost Its Legitimacy and Why Reform Is Overdue
 
 The United States Supreme Court is supposed to be above politics. It's supposed to represent the rule of law, not the rule of party. But here's a fact that should make every American's blood boil: six of the nine current justices were appointed by presidents who lost the popular vote, and three were confirmed by senators representing less than half the American population.
 

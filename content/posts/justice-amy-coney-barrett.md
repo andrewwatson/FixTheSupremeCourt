@@ -1,5 +1,5 @@
 +++
-title = "Justice Amy Coney Barrett: Ethics, Recusals, and the Case for Reform"
+title = "Amy Coney Barrett: Ethics & Recusals"
 date = '2026-09-04T09:00:00-04:00'
 lastmod = '2026-09-04T09:00:00-04:00'
 draft = false
@@ -9,7 +9,7 @@ url = '/justices/amy-coney-barrett/'
 weight = 1
 ShowToc = true
 TocOpen = false
-description = "Amy Coney Barrett's ethics and recusal record: a reported $2 million book deal that closed weeks before the Dobbs decision, a documented pattern of appropriate recusals for personal and professional ties — and her own defense of never having to explain why."
+description = "Amy Coney Barrett's ethics record: a $2 million book deal that closed weeks before the Dobbs decision, and her own defense of never having to explain a recusal."
 
 tags = ["amy coney barrett", "ethics", "recusal", "corruption", "supreme-court", "court-reform"]
 

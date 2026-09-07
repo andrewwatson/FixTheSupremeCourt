@@ -1,5 +1,5 @@
 +++
-title = "Justice Elena Kagan: Ethics, Recusals, and the Case for Reform"
+title = "Elena Kagan: Ethics & Recusals"
 date = '2026-09-04T09:00:00-04:00'
 lastmod = '2026-09-04T09:00:00-04:00'
 draft = false
@@ -9,7 +9,7 @@ url = '/justices/elena-kagan/'
 weight = 1
 ShowToc = true
 TocOpen = false
-description = "Elena Kagan's ethics and recusal record: the 2012 recusal fight over her Obama-era role defending the Affordable Care Act, the 2026 conservative-led push to force her off a major climate case, and her own record as an early advocate for recusal transparency."
+description = "Elena Kagan's ethics record: the 2012 fight over her Obama-era ACA role, the 2026 push to force her off a climate case, and her record on recusal transparency."
 
 tags = ["elena kagan", "ethics", "recusal", "corruption", "supreme-court", "court-reform"]
 

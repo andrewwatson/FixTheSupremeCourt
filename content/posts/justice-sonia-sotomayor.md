@@ -1,5 +1,5 @@
 +++
-title = "Justice Sonia Sotomayor: Ethics, Recusals, and the Case for Reform"
+title = "Sonia Sotomayor: Ethics & Recusals"
 date = '2026-09-04T09:00:00-04:00'
 lastmod = '2026-09-04T09:00:00-04:00'
 draft = false
@@ -9,7 +9,7 @@ url = '/justices/sonia-sotomayor/'
 weight = 1
 ShowToc = true
 TocOpen = false
-description = "Sonia Sotomayor's ethics and recusal record: taxpayer-funded staff pushing colleges and libraries to buy her books, more than $3.7 million in book income, and a chambers process failure that led her to not recuse from cases involving her own publisher."
+description = "Sonia Sotomayor's ethics record: taxpayer-funded staff pushing her books, $3.7 million in book income, and a process failure over cases involving her publisher."
 
 tags = ["sonia sotomayor", "ethics", "recusal", "corruption", "supreme-court", "court-reform"]
 

@@ -1,5 +1,5 @@
 +++
-title = "Justice Neil Gorsuch: Ethics, Recusals, and the Case for Reform"
+title = "Neil Gorsuch: Ethics & Recusals"
 date = '2026-09-04T09:00:00-04:00'
 lastmod = '2026-09-04T09:00:00-04:00'
 draft = false
@@ -9,7 +9,7 @@ url = '/justices/neil-gorsuch/'
 weight = 1
 ShowToc = true
 TocOpen = false
-description = "Neil Gorsuch's ethics and recusal record: the Colorado property sale to a law firm CEO whose buyer he never disclosed, and the belated recusal from a case benefiting his longtime patron Philip Anschutz."
+description = "Neil Gorsuch's ethics record: a Colorado property sale to a law firm CEO he never disclosed, and a belated recusal benefiting patron Philip Anschutz."
 
 tags = ["neil gorsuch", "ethics", "recusal", "corruption", "supreme-court", "court-reform"]
 

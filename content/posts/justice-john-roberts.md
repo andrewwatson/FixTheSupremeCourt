@@ -1,5 +1,5 @@
 +++
-title = "Chief Justice John Roberts: Ethics, Recusals, and the Case for Reform"
+title = "John Roberts: Ethics & Recusals"
 date = '2026-09-04T09:00:00-04:00'
 lastmod = '2026-09-04T09:00:00-04:00'
 draft = false
@@ -9,7 +9,7 @@ url = '/justices/john-roberts/'
 weight = 1
 ShowToc = true
 TocOpen = false
-description = "Chief Justice John Roberts's ethics record: his wife's $10.3 million in law-firm recruiting commissions reported as 'salary,' the ethics code he personally designed with no enforcement mechanism, and the unresolved disbarment complaint alleging a broader pattern."
+description = "John Roberts's ethics record: his wife's $10.3 million in recruiting commissions, the ethics code he wrote with no enforcement, and an open disbarment complaint."
 
 tags = ["john roberts", "ethics", "recusal", "corruption", "supreme-court", "court-reform"]
 

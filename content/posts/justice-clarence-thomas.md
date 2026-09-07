@@ -1,5 +1,5 @@
 +++
-title = "Justice Clarence Thomas: Ethics, Recusals, and the Case for Reform"
+title = "Clarence Thomas: Ethics & Recusals"
 date = '2026-09-04T09:00:00-04:00'
 lastmod = '2026-09-04T09:00:00-04:00'
 draft = false
@@ -9,7 +9,7 @@ url = '/justices/clarence-thomas/'
 weight = 1
 ShowToc = true
 TocOpen = false
-description = "Clarence Thomas's full ethics and recusal record: the $4.75 million in undisclosed gifts from Harlan Crow, 54 recusals for his son's conflicts and zero for his wife's, and why his record is a leading argument for a binding Supreme Court ethics code."
+description = "Clarence Thomas's ethics record: $4.75 million in undisclosed gifts from Harlan Crow, 54 recusals for his son's conflicts and zero for his wife's."
 
 tags = ["clarence thomas", "ethics", "recusal", "corruption", "supreme-court", "court-reform"]
 

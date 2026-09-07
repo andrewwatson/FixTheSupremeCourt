@@ -1,5 +1,5 @@
 +++
-title = "Justice Samuel Alito: Ethics, Recusals, and the Case for Reform"
+title = "Samuel Alito: Ethics & Recusals"
 date = '2026-09-04T09:00:00-04:00'
 lastmod = '2026-09-04T09:00:00-04:00'
 draft = false
@@ -9,7 +9,7 @@ url = '/justices/samuel-alito/'
 weight = 1
 ShowToc = true
 TocOpen = false
-description = "Samuel Alito's full ethics and recusal record: the undisclosed Paul Singer fishing trip, the insurrection flags he refused to explain, why he leads the Court in stock-related recusals — and why he still refused to recuse from the cases that mattered most."
+description = "Samuel Alito's ethics record: the undisclosed Paul Singer fishing trip, the insurrection flags he wouldn't explain, and cases he refused to recuse from."
 
 tags = ["samuel alito", "ethics", "recusal", "corruption", "supreme-court", "court-reform"]
 

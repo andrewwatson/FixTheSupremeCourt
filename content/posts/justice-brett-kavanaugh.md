@@ -1,5 +1,5 @@
 +++
-title = "Justice Brett Kavanaugh: Ethics, Recusals, and the Case for Reform"
+title = "Brett Kavanaugh: Ethics & Recusals"
 date = '2026-09-04T09:00:00-04:00'
 lastmod = '2026-09-04T09:00:00-04:00'
 draft = false
@@ -9,7 +9,7 @@ url = '/justices/brett-kavanaugh/'
 weight = 1
 ShowToc = true
 TocOpen = false
-description = "Brett Kavanaugh's ethics and recusal record: the unexplained disappearance of up to $150,000 in personal debt before his confirmation, and the case that his own pre-bench writing on presidential immunity should have required recusal from Trump-related cases."
+description = "Brett Kavanaugh's ethics record: up to $150,000 in debt that vanished before his confirmation, and why his own writing should bar him from immunity cases."
 
 tags = ["brett kavanaugh", "ethics", "recusal", "corruption", "supreme-court", "court-reform"]
 

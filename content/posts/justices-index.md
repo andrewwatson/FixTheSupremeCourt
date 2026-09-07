@@ -1,5 +1,5 @@
 +++
-title = "The Justices: Ethics and Recusal Records"
+title = "The Justices: Ethics & Recusals"
 date = '2026-09-04T09:00:00-04:00'
 lastmod = '2026-09-04T09:00:00-04:00'
 draft = false
@@ -7,7 +7,7 @@ author = 'Editor'
 type = 'justice-profile'
 url = '/justices/'
 weight = 1
-description = "Ethics and recusal records for the sitting Supreme Court justices, with sources — and why each record matters for the case for a binding ethics code and term limits."
+description = "Ethics and recusal records for all nine sitting Supreme Court justices, sourced, and why each record matters for the case for a binding ethics code."
 
 tags = ["ethics", "recusal", "supreme-court", "court-reform"]
 
