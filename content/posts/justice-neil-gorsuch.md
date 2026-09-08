@@ -1,7 +1,7 @@
 +++
 title = "Neil Gorsuch: Ethics & Recusals"
-date = '2026-09-04T09:00:00-04:00'
-lastmod = '2026-09-04T09:00:00-04:00'
+date = '2026-09-04T09:05:00-04:00'
+lastmod = '2026-09-04T09:05:00-04:00'
 draft = false
 author = 'Editor'
 type = 'justice-profile'
