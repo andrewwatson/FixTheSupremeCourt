@@ -233,6 +233,12 @@
     "uri": "at://did:plc:4ouqy2gftanfjrc7axqrpjsi/app.bsky.feed.post/3mv6hqbolfn2g",
     "url": "https://fixthesupremecourt.org/justices/samuel-alito/"
   },
+  "justice-sonia-sotomayor": {
+    "posted_at": "2026-09-15T16:27:42.948007Z",
+    "title": "Sonia Sotomayor: Ethics & Recusals",
+    "uri": "at://did:plc:4ouqy2gftanfjrc7axqrpjsi/app.bsky.feed.post/3mvl25uzfin2g",
+    "url": "https://fixthesupremecourt.org/justices/sonia-sotomayor/"
+  },
   "justices-index": {
     "posted_at": "2026-09-08T16:29:43.220879Z",
     "title": "The Justices: Ethics & Recusals",
